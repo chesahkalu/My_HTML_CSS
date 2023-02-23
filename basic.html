@@ -1,26 +1,75 @@
 <!DOCTYPE html>     <!-- Doucment type declaration that it is HTML, declares the version of html-->
-<html lang="en">    <!--inside this is the actual code, within the opening tag defines the document laguage(an attribute for the element)-->
+<html lang="en">    <!--within this element is the actual codes,closed at the very last line. Within the opening tag defines the document laguage(an attribute for the element)-->
   <head>            <!-- the head isnt displayed on browser but would contain various informations and metadata about the page-->
-    <link rel="stylesheet" href="assets/stylesheet/resst.css"> <!--the link element is where you link your css files path for styling, the resset css is linked here-->
+    <link rel="stylesheet" href="reset.css"> <!--the link element is where you link your css files path for styling, the resset css is linked here-->
     <meta charset="utf-8">  <!--defines the unicode format for the computer to use in tranforming data-->
     <title>Basic HTML</title>  <!--title is the page title that shows up on the top and tabs of your browser-->
   </head>           <!--close the head tag to make it an element-->
-  <body>            <!--define main content about the page-->
-    <header>HOPE</header>
-    <button>LOVE</button>
-    <h1>University Of Mayen Kalu</h1>
-    <h2><a href="hehe.html">HOME</a></h2>
-    <h3>August 24&#8212;26th &#8212; Chicago, IL</h3>
-    <a href="#about"> Jump to about us</a>
-    <p> A link to chesa's site <a href="haha.html"> chesa</a></p>
-    <p> Click this link to open chesa's site in another window <a href="haha.html" target="_blank"> chesa</a></p>
-    <center><p> Mail chesa <a href="mailto:chesahkalu@gmail.com"> here </a></p></center>
-    <p>Welcome to the greatest university in the world,Schoolarship for everyone.</p>
-    <footer id="about">
-      <h2>About us</h2>
-      <p>He also makes great use of oversized text to bring attention to his work in a humorous manner.</p>
-      <p>Perhaps what’s striking about this page is that it introduces Gummisig’s portfolio, but also reflects his free spirit and commitment.And while he mentions the household names he worked for in the past, he remains approachable and open to new collaborations.</p>
-      <p>Perhaps the most striking feature behind this page is that it acts as a preface to the designer’s portfolio, mirroring his free spirit and a remarkable passion for design.</p>
+  <body id="top">            <!--define main content about the page-->
+    <header>        <!--the header starts untop the page, could introduce the page, and include other details and navigation-->
+        <h1>THIS A BASIC HTML PAGE</h1>     <!--header of the header element-->
+        <p>Paragraph 1: Short Paragraph</p> <!--a paragraph-->
+        <nav> <!--how to nav and link other pages, showing hyperlinks-->   
+            <a href="basic2.html">click next page </a>   <!-- a hyper link to another page-->
+            <p>click next page in another window<a href="basic2.html" target="_blank"> here</a></p>  <!--a hyper link to another page to open in another window-->
+            <center><p> Mail me <a href="mailto:chesahkalu@gmail.com"> here </a></p></center> <!--mail link at page center-->
+            <a href="#about"> Jump to about us</a> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
+        </nav>
+    </header>   <!--close header element-->
+    <section>   <!--The <section> element is used to identify a thematic grouping of content--> 
+        <h2> A sectiion of the webpage with some write up</h2>
+        <p>He also makes great use of <strong>oversized</strong> text to bring attention to his work in a <em>humorous</em> manner.</p><!--<strong> used to bold and <em> used to italics-->
+        <p>Perhaps what’s      striking about this page is that it introduces Gummisig’s portfolio, 
+            <br>but also reflects his free spirit &nbsp; and &nbsp; commitment.<br> .And while he   mentions the household names he worked for in the past, 
+            he remains approachable and open to new collaborations.
+        </p>    <!--paragraphs removes extra spaces, <br> can be used to break to a new line, and &nbsp; a code for space -->
+        <p>Perhaps the most striking feature behind this page is that it acts as a preface to the designer’s portfolio, 
+            mirroring his free spirit and a remarkable passion for design.</p> 
+    </section>
+    <div>       <!--A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design-->
+        <pre>   <!--Preformatted texts are displayed as written in the HTML file.-->
+            This text
+
+            &#9996; 
+
+              will be
+
+              &#9874;
+
+                displayed
+
+                &#9992;
+
+                in the same manner
+
+                &#63490;
+
+                 <span>as it is written</span>  <!--an inline-level element commonly used to identify smaller groupings of text within a block-level element for design-->
+          </pre>
+    </div>
+    <article>
+        An Article- Computer coding is the use of computer programming languages<br>
+        to give computers and machines a set of instructions on what actions to perform.<br> 
+        Coding is how humans communicate with machines.<br>
+        It's what allows us to create computer software like programs,<br>
+        operating systems, and mobile applications.<br>
+        <pre>
+                            &#9760;
+        .......Written by THE CODING NINJA - 11 Ọkt 2022
+        </pre>
+    </article>
+    <aside>     <!--an element that appears off to the left or right side of a page, positioned with css-->
+        Aside - content, such as sidebars,<br>
+        inserts, or brief explanations,<br>
+        that is tangentially related to<br>
+        the content surrounding it.
+    </aside>
+    <section id="about">
+        <h3>ABOUT US</h3> 
+    </section>
+    <footer>    <!--usually the last part of the page-->
+        <a href="#top">GO TO TOP</a>     <!--goes to where has the 'top' id attribute which is 'body' at the top-->
+      <button>A BUTTON</button>
     </footer>
   </body>  
 </html>
