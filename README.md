@@ -15,3 +15,6 @@ a uniform font,colour,size etc.
 
 * [SPECIAL_CHARACTER](./special_char_link.txt) : Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character by either the computer or human; thus they need to be encoded. In this file is a link with a long list of characters and their direct codes.
 
+* HIEARACHY and INDENTATION : HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page. Code should be well-formed and properly indented, with each element on its own line and each level of hierarchy indented by one level. This makes the code easier to read and understand, and can help to avoid errors. 
+
+
