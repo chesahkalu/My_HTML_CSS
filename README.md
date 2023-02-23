@@ -17,4 +17,19 @@ a uniform font,colour,size etc.
 
 * HIEARACHY and INDENTATION : HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page. Code should be well-formed and properly indented, with each element on its own line and each level of hierarchy indented by one level. This makes the code easier to read and understand, and can help to avoid errors. 
 
-
+* [BASIC_HTML](./basic.html) : This file contains a basic html file structure with some description comments.
+    - A void long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
+    - Use proper indentations, white spaces and blank lines , for readability.
+    - Never skip the <title> element in your HTML document
+    - Never skip the <html> , <body> , and <head> tags. This is the first step to semantic codes
+    - The lang attribute is vital to include within an <html> element. Its primary goal is to define the natural language of the content. 
+    Browsers and search engines use this information for a more accurate page ranking in search results. If there's a piece of text in a different language, 
+    you can specify the language with the lang attribute for the element that surrounds the content.
+    - Give everything the appropriate hierarchy.
+    - Some elements are self closing eg. <br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>
+    - Observe and use `block` and `in-line` elements properly
+    * Block-level elements begin on a new line, stacking one on top of the other, and occupy any available width. 
+    Block-level elements may be nested inside one another and may wrap inline-level elements eg- <header> , <p> , etc
+    * Inline-level elements must not begin on a new line. They fall into the normal flow of a document, 
+    lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; 
+    however, they cannot wrap block-level elements. eg, <span> <a> <pre> etc
