@@ -11,7 +11,7 @@ CSS works by specifying rules for how different HTML elements should be displaye
 This file contains the popular `Eric Meyer's` css resset code, which would be linked in the `head` element of your HTML code, to resset every other values of each element to
 a uniform font,colour,size etc. 
 
-* SEMANTIC_CODE : Dessist from styling, colouring or adding fonts to your page using HTML, that is the job of `css`. HTML should be the carrier of the page content structured properly with the proper elements and tools. This gives an ideal interpretation of the content , meaning and usage of the page to both the computer and human users. 
+* SEMANTIC_CODE : Dessist from styling, colouring or adding fonts to your page using HTML, that is the job of `css` in a seperate file. HTML should be the carrier of the page content structured properly with the proper elements and tools. This gives an ideal interpretation of the content , meaning and usage of the page to both the computer and human users. Including `css` sstyling codes in your `HTML` code file is bad practice:x:
 
 * [SPECIAL_CHARACTER](./special_char_link.txt) : Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character by either the computer or human; thus they need to be encoded. In this file is a link with a long list of characters and their direct codes.
 
