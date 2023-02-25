@@ -33,3 +33,6 @@ a uniform font,colour,size etc.
         * Inline-level elements must not begin on a new line. They fall into the normal flow of a document, 
         lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; 
         however, they cannot wrap block-level elements. eg, `<span> <a> <pre>` etc
+    - always set the height or width of images. Otherwise when the image loads, the content on the webpage will be shifted.
+    - `<strong>` and `<em>` are semantic tagss used to put emphasis, even though they both bold and italics the texts withing them respectively.
+    `<b>` and `<i>` can be used respectively in place of them.
