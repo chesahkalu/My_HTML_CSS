@@ -17,8 +17,10 @@
             <a href="basic2.html">click next page </a>   <!-- a hyper link to another html page, basic2.html-->
             <p>click next page to open in another window<a href="basic2.html" target="_blank"> here</a></p>  <!--a hyper link to another page to open in another window-->
             <center><p> Mail me <a href="mailto:chesahkalu@gmail.com"> here </a></p></center> <!--mail link at center of page-->
+            <center><p>Call me <a href="tel:+2348130703733"> here </a></p></center>
             <a style="border: 1px solid black" href="#about"> Jump to about us </a> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
             <a href="#table"> &nbsp;Jump to table </a>
+            <a href="/files/logo.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
         </nav>
     </header>   <!--close header element-->
 
@@ -37,7 +39,7 @@
 
     <hr>
 
-    <div>       <!--A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design-->
+    <div >       <!--A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design-->
         <pre>   <!--Preformatted texts are displayed as written in the HTML file.-->
             This text
 
@@ -105,9 +107,9 @@
           <td>19</td>
           <td>Nepal</td>
         </tr>
-      </table>
+    </table>
 
-      <hr>
+    <hr>
 
       <ul>  <!--unordered list created-->
         <li>Apple</li>  <!--list items-->
@@ -171,14 +173,25 @@
         </li>
       </ol>
 
-      <hr>
+    <hr>
 
-    <section id="about">
+    <img src="assets/cockpit.png" alt="A cockpit" title="AN IMAGE" loading="lazy" width="1500" height="400">
+    <!--src = file path of image, alt=text to show if image doesnt show, loading= makes image load when scrolled down to location on page-->
+
+    <section id="about" style="border: 2px solid black">
         <h3>ABOUT US</h3> 
+        <h4>nice to meet you</h4>
+        <p>We're John and Jai, co-founders of Hydrant.<br>
+           Our journey started when both us (John, a scientist, and Jai, a finance consultant)<br>
+           were trying to solve the same problem on opposite sides of the US.<br>
+           After a friend connected us, the rest is history.
+        </p>
+
+
     </section>
 
     <hr>
-
+ 
     <footer>    <!--usually the last part of the page-->
         <a href="#top">GO TO TOP</a>     <!--goes to where has the 'top' id attribute which is 'body' at the top-->
       <button>A BUTTON</button>
