@@ -36,3 +36,16 @@ a uniform font,colour,size etc.
     - always set the height or width of images. Otherwise when the image loads, the content on the webpage will be shifted.
     - `<strong>` and `<em>` are semantic tagss used to put emphasis, even though they both bold and italics the texts withing them respectively.
     `<b>` and `<i>` can be used respectively in place of them.
+    - some text formating tags = | <b> | - Bold Text |
+                                |------|--------------|
+                                 | <i> | - Italic Text |
+                                 | <u> | - Underlined Text |
+                                 | <strong> | - Strong Text |
+                                 | <em> | - Emphasized Text |
+                                 | <mark> | - Highlighted Text |
+                                 | <sup> | - Superscript Text |
+                                 | <sub> | - Subscript Text |
+                                 | <del> | - Deleted Text |
+                                 | <ins> | - Inserted Text |
+                                 | <big> | - Big Text |
+                                 | <small> | - Small Text |
