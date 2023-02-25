@@ -37,15 +37,15 @@ a uniform font,colour,size etc.
     - `<strong>` and `<em>` are semantic tagss used to put emphasis, even though they both bold and italics the texts withing them respectively.
     `<b>` and `<i>` can be used respectively in place of them.
     - some text formating tags 
-        * <b> tag - Bold Text
-        * <i> tag - Italic Text
-        * <u> tag - Underlined Text
-        * <strong> tag - Strong Text
-        * <em> tag - Emphasized Text
-        * <mark> tag - Highlighted Text
-        * <sup> tag - Superscript Text
-        * <sub> tag - Subscript Text
-        * <del> tag - Deleted Text
-        * <ins> tag - Inserted Text
-        * <big> tag - Big Text
-        * <small> tag - Small Text
+        * `<b>` tag - Bold Text
+        * `<i>` tag - Italic Text
+        * `<u>` tag - Underlined Text
+        * `<strong>` tag - Strong Text
+        * `<em>` tag - Emphasized Text
+        * `<mark>` tag - Highlighted Text
+        * `<sup>` tag - Superscript Text
+        * `<sub>` tag - Subscript Text
+        * `<del>` tag - Deleted Text
+        * `<ins>` tag - Inserted Text
+        * `<big>` tag - Big Text
+        * `<small>` tag - Small Text
