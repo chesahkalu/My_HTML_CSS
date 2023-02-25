@@ -17,10 +17,12 @@
             <a href="basic2.html">click next page </a>   <!-- a hyper link to another html page, basic2.html-->
             <p>click next page to open in another window<a href="basic2.html" target="_blank"> here</a></p>  <!--a hyper link to another page to open in another window-->
             <center><p> Mail me <a href="mailto:chesahkalu@gmail.com"> here </a></p></center> <!--mail link at center of page-->
-            <a href="#about"> Jump to about us </a> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
-            <a href="#table"> Jump to table </a>
+            <a style="border: 1px solid black" href="#about"> Jump to about us </a> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
+            <a href="#table"> &nbsp;Jump to table </a>
         </nav>
     </header>   <!--close header element-->
+
+    <hr> <!--horizontal line across webpage-->
 
     <section>   <!--The <section> element is used to identify a thematic grouping of content--> 
         <h2> A sectiion of the webpage with some write up</h2>
@@ -32,6 +34,8 @@
         <p>Perhaps the most striking feature behind this page is that it acts as a preface to the designer’s portfolio, 
             mirroring his free spirit and a remarkable passion for design.</p> 
     </section>
+
+    <hr>
 
     <div>       <!--A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design-->
         <pre>   <!--Preformatted texts are displayed as written in the HTML file.-->
@@ -51,9 +55,11 @@
 
                 &#63490;
 
-                 <span>as it is written</span>  <!--an inline-level element commonly used to identify smaller groupings of text within a block-level element for design-->
+                 <span style="border: 2px solid black">as it is written</span>  <!--an inline-level element commonly used to identify smaller groupings of text within a block-level element for design-->
           </pre>
     </div>
+
+    <hr>
 
     <article>
         An Article- Computer coding is the use of computer programming languages<br>
@@ -67,12 +73,16 @@
         </pre>
     </article>
 
+    <hr>
+
     <aside>     <!--an element that appears off to the left or right side of a page, positioned with css-->
         Aside - content, such as sidebars,<br>
         inserts, or brief explanations,<br>
         that is tangentially related to<br>
         the content surrounding it.
     </aside>
+
+    <hr>
 
     <table border="1" id="table" > <!--Html table-->
         <tr>            <!--table row-->
@@ -97,6 +107,8 @@
         </tr>
       </table>
 
+      <hr>
+
       <ul>  <!--unordered list created-->
         <li>Apple</li>  <!--list items-->
         <li>Orange</li>
@@ -119,23 +131,53 @@
         </dd>
         <dt>CSS</dt>
         <dd>
-            <ol>
+            <ol type="a"> <!--indicating numbering type-->
                 <li>Cascading StyleSheets</li>
                 <li>For styling the web content</li>
             </ol>
         </dd>
         <dt>JS</dt>
         <dd>
-            <ul>
+            <ul type="square"> <!--indicating type of pointer for listing-->
                 <li>Javascript</li>
                 <li>for creating gimics and animations on the webpage</li>
             </ul>
         </dd>
       </dl>
 
+      <hr>
+
+      <ol type="I"> <!--nested list-->
+        <li>
+          Chapter 1
+          <ol type="a">
+            <li>Lesson 1</li>
+            <li>Lesson 2</li>
+          </ol>
+        </li>
+        <li>
+          Chapter 2
+          <ol reversed type="a">  <!--ordered number reversed-->
+            <li>Lesson 1</li>
+            <li>Lesson 2</li>
+            <li>Lesson 3</li>
+          </ol>
+        </li>
+        <li>
+          Chapter 3
+          <ol type="a">
+            <li>Lesson 1</li>
+          </ol>
+        </li>
+      </ol>
+
+      <hr>
+
     <section id="about">
         <h3>ABOUT US</h3> 
     </section>
+
+    <hr>
 
     <footer>    <!--usually the last part of the page-->
         <a href="#top">GO TO TOP</a>     <!--goes to where has the 'top' id attribute which is 'body' at the top-->
