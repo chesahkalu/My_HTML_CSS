@@ -5,7 +5,7 @@
   <head>            <!-- the head isnt displayed on browser but would contain various informations and metadata about the page-->
     <link rel="stylesheet" href="reset.css"> <!--the link element is where you link your css files path for styling, the resset css is linked here-->
     <meta charset="utf-8">  <!--defines the unicode format for the computer to use in tranforming data-->
-    <title>Basic HTML</title>  <!--title is the page title that shows up on the top and tabs of your browser-->
+    <title>Basic HTML</title>  <!--title is the page title that shows up on the search engine and top and tabs of your browser-->
   </head>           <!--close the head tag to make it an element-->
 
   <body id="top">            <!--define main content about the page,has an attribute ID thatis ref to a hyperlink to go back to the top of the page-->
@@ -20,7 +20,6 @@
             <center><p>Call me <a href="tel:+2348130703733"> here </a></p></center>
             <a style="border: 1px solid black" href="#about"> Jump to about us </a> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
             <a href="#table"> &nbsp;Jump to table </a>
-            <a href="/files/logo.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
         </nav>
     </header>   <!--close header element-->
 
@@ -180,6 +179,7 @@
 
     <img src="assets/cockpit.png" alt="A cockpit" title="AN IMAGE" loading="lazy" width="1500" height="400">
     <!--src = file path of image, alt=text to show if image doesnt show, loading= makes image load when scrolled down to location on page-->
+    <a href="assets/cockpit.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
 
     <section id="about" style="border: 2px solid black">
         <h3>ABOUT US</h3> 

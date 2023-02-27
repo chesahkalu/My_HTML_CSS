@@ -26,6 +26,8 @@ a uniform font,colour,size etc.
     Browsers and search engines use this information for a more accurate page ranking in search results. If there's a piece of text in a different language, 
     you can specify the language with the lang attribute for the element that surrounds the content.
     - Give everything the appropriate hierarchy.
+    - Titles should not be longer than 50 characters as search engines ignore text after 50 characters and generally, most screens cannot display titles longer than 50 characters.
+    - Try to be as unique as possible, duplicate titles don't do well in SEO rankings and may cause confusion for users.
     - Some elements are self closing eg. `<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>`
     - Observe and use `block` and `in-line` elements properly
         * Block-level elements begin on a new line, stacking one on top of the other, and occupy any available width. 
