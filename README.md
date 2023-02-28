@@ -13,24 +13,33 @@ a uniform font,colour,size etc.
 
 * SEMANTIC_CODE : Dessist from styling, colouring or adding fonts to your page using HTML, that is the job of `css` in a seperate file. HTML should be the carrier of the page content structured properly with the proper elements and tools. This gives an ideal interpretation of the content , meaning and usage of the page to both the computer and human users. Including `css` sstyling codes in your `HTML` code file is bad practice:x:
 Also use semantic tags to accurately describe their purpose and describe the type of their element content. Semantics tags clearly describe the purpose of a code,
-makes the code easier to read , makes the site more accessible , leads to better SEO. Some semantic tags -
+makes the code easier to read , makes the site more accessible , leads to better SEO. Some semantic tags
     - `<p>`	defines a paragraph of a document
-    - `<header>`	defines the header of a document or section of a document
-    - `<footer>`	defines the footer of a document or section of a document
-    - `<nav>`	define a section of the page that contains navigation links
-    - `<article>`	used to specify independent, self-contained content
-    - `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar
-    - `<main>`	specifies the main content of a document
-    - `<section>`	defines the section of a document
-    - `<details>`	defines additional details that the user can view or hide
-    - `<summary>`	defines the visible heading for the `<details>` element
+* `<header>`	defines the header of a document or section of a document
+* `<footer>`	defines the footer of a document or section of a document
+* `<nav>`	define a section of the page that contains navigation links
+* `<article>`	used to specify independent, self-contained content
+* `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar
+* `<main>`	specifies the main content of a document
+* `<section>`	defines the section of a document
+* `<details>`	defines additional details that the user can view or hide
+* `<summary>`	defines the visible heading for the `<details>` element
 
 * [SPECIAL_CHARACTER](./special_char_link.txt) : Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character by either the computer or human; thus they need to be encoded. In this file is a link with a long list of characters and their direct codes.
 
 * HIEARACHY and INDENTATION : HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page. Code should be well-formed and properly indented, with each element on its own line and each level of hierarchy indented by one level. This makes the code easier to read and understand, and can help to avoid errors. 
 
+* HTML Accessibility : This is a good as Semantic coding getss. The website should be easily accessible to the disabled who would rely on the computer to break down the contents of the website. This is only easily efficient if the HTML content is semantically written and the page contents properly outlined. This includes :
+    - Proper use of Headings - `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`
+    - HTML lang attribute
+    - Descriptive link text
+    - Use of button tag
+    - Good Alternative Texts for images = `alt`
+    - ETC
+
+
 * [BASIC_HTML](./basic.html) : This file contains a basic html file structure with some description comments.
-    - A void long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
+    - Avoid long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
     - Use proper indentations, white spaces and blank lines , for readability.
     - Never skip the `<title>` element in your HTML document
     - Never skip the `<html>` , `<body>` , and `<head>` tags. This is the first step to semantic codes

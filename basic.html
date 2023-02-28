@@ -27,7 +27,7 @@
 
     <hr> <!--horizontal line across webpage-->
 
-    <section>   <!--The <section> element is used to identify a thematic grouping of content--> 
+    <section>   <!--The <section> element is used to identify a thematic grouping of related content, use to organize different parts of the documents--> 
         <h2> A sectiion of the webpage with some write up</h2>
         <p>He also makes great use of <strong>oversized</strong> text to bring attention to his work in a <em>humorous</em> manner.</p><!--<strong> used to bold and <em> used to italics-->
         <p>Perhaps what’s      striking about this page is that it introduces Gummisig’s portfolio, 
@@ -35,7 +35,7 @@
             he remains approachable and open to new collaborations.
         </p>    <!--paragraphs removes extra spaces, <br> can be used to break to a new line, and &nbsp; a code for space -->
         <p>Perhaps the most striking feature behind this page is that it acts as a preface to the designer’s portfolio, 
-            mirroring his free spirit and a remarkable passion for design.</p> 
+            mirroring his free spirit and a remarkable passion for design.</p>
     </section>
 
     <hr>
@@ -211,13 +211,16 @@
 
 
     <aside style="width: 250px;border: 1px solid black; padding: 5px; margin: 5px; float: right;">
-      <nav> <!--how to nav and link other pages, showing hyperlinks-->   
-        <a href="basic2.html">click next page </a>   <!-- a hyper link to another html page, basic2.html-->
-        <p>click next page to open in another window<a href="basic2.html" target="_blank"> here</a></p>  <!--a hyper link to another page to open in another window-->
-        <p> Mail me <a href="mailto:chesahkalu@gmail.com"> here </a></p> <!--mail link at center of page-->
-        <p>Call me <a href="tel:+2348130703733"> here </a></p>
-        <a style="border: 1px solid black" href="#about"> Jump to about us </a><br> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
-        <a href="#table"> &nbsp;Jump to table </a>
+      <p>Contact Us:</p>
+      <nav> <!--how to nav and link other pages, showing hyperlinks-->
+        <ul>
+          <li><a href="basic2.html">click next page </a></li>   <!-- a hyper link to another html page, basic2.html-->
+          <li><p>click next page to open in another window<a href="basic2.html" target="_blank"> here</a></p></li>  <!--a hyper link to another page to open in another window-->
+          <li><p> Mail me <a href="mailto:chesahkalu@gmail.com"> here </a></p></li> <!--mail link at center of page-->
+          <li><p>Call me <a href="tel:+2348130703733"> here </a></p></li>
+          <li><a style="border: 1px solid black" href="#about"> Jump to about us </a></li><br> <!--used to jump to a section of the page, ref is made of ID included in attribute of element that wants to be jumped to-->
+          <li><a href="#table"> &nbsp;Jump to table </a></li>
+        </ul>
       </nav>
     </aside>   
 
@@ -230,10 +233,6 @@
            After a friend connected us, the rest is history.
         </p> 
     </main>
-
-    
-
-    <hr>
  
     <footer>    <!--usually the last part of the page-->
         <a href="#top">GO TO TOP</a>     <!--goes to where has the 'top' id attribute which is 'body' at the top-->
