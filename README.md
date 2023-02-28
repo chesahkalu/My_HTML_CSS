@@ -12,6 +12,18 @@ This file contains the popular `Eric Meyer's` css resset code, which would be li
 a uniform font,colour,size etc. 
 
 * SEMANTIC_CODE : Dessist from styling, colouring or adding fonts to your page using HTML, that is the job of `css` in a seperate file. HTML should be the carrier of the page content structured properly with the proper elements and tools. This gives an ideal interpretation of the content , meaning and usage of the page to both the computer and human users. Including `css` sstyling codes in your `HTML` code file is bad practice:x:
+Also use semantic tags to accurately describe their purpose and describe the type of their element content. Semantics tags clearly describe the purpose of a code,
+makes the code easier to read , makes the site more accessible , leads to better SEO. Some semantic tags -
+* `<p>`	defines a paragraph of a document
+* `<header>`	defines the header of a document or section of a document
+* `<footer>`	defines the footer of a document or section of a document
+* `<nav>`	define a section of the page that contains navigation links
+* `<article>`	used to specify independent, self-contained content
+* `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar
+* `<main>`	specifies the main content of a document
+* `<section>`	defines the section of a document
+* `<details>`	defines additional details that the user can view or hide
+* `<summary>`	defines the visible heading for the `<details>` element
 
 * [SPECIAL_CHARACTER](./special_char_link.txt) : Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character by either the computer or human; thus they need to be encoded. In this file is a link with a long list of characters and their direct codes.
 
