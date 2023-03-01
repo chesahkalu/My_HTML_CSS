@@ -30,7 +30,7 @@ makes the code easier to read , makes the site more accessible , leads to better
 * HIEARACHY and INDENTATION : HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page. Code should be well-formed and properly indented, with each element on its own line and each level of hierarchy indented by one level. This makes the code easier to read and understand, and can help to avoid errors. 
 
 * HTML Accessibility : This is a good as Semantic coding getss. The website should be easily accessible to the disabled who would rely on the computer to break down the contents of the website. This is only easily efficient if the HTML content is semantically written and the page contents properly outlined. This includes :
-    - Proper use of Headings - `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`
+    - Proper use of Headings - `h1`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`
     - HTML lang attribute
     - Descriptive link text
     - Use of button tag
