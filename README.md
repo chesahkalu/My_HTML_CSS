@@ -19,11 +19,11 @@ makes the code easier to read , makes the site more accessible , leads to better
     - `<footer>`	defines the footer of a document or section of a document.
     - `<nav>`	define a section of the page that contains navigation links.
     - `<article>`	used to specify independent, self-contained content.
-    - `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar
-    - `<main>`	specifies the main content of a document
-    - `<section>`	defines the section of a document
+    - `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar.
+    - `<main>`	specifies the main content of a document.
+    - `<section>`	defines the section of a document.
     - `<details>`	defines additional details that the user can view or hide
-    - `<summary>`	defines the visible heading for the `<details>` element
+    - `<summary>`	defines the visible heading for the `<details>` element.
 
 * [SPECIAL_CHARACTER](./special_char_link.txt) : Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character by either the computer or human; thus they need to be encoded. In this file is a link with a long list of characters and their direct codes.
 
