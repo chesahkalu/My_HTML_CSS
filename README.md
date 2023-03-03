@@ -15,10 +15,10 @@ a uniform font,colour,size etc.
 Also use semantic tags to accurately describe their purpose and describe the type of their element content. Semantics tags clearly describe the purpose of a code,
 makes the code easier to read , makes the site more accessible , leads to better SEO. Some semantic tags
     - `<p>`	defines a paragraph of a document
-    - `<header>`	defines the header of a document or section of a document
-    - `<footer>`	defines the footer of a document or section of a document
-    - `<nav>`	define a section of the page that contains navigation links
-    - `<article>`	used to specify independent, self-contained content
+    - `<header>`	defines the header of a document or section of a document.
+    - `<footer>`	defines the footer of a document or section of a document.
+    - `<nav>`	define a section of the page that contains navigation links.
+    - `<article>`	used to specify independent, self-contained content.
     - `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar
     - `<main>`	specifies the main content of a document
     - `<section>`	defines the section of a document

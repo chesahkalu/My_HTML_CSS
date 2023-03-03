@@ -205,9 +205,11 @@
 
     <hr>
 
-    <img src="assets/cockpit.png" alt="A cockpit" title="AN IMAGE" loading="lazy" width="1500" height="400">
-    <!--src = file path of image, alt=text to show if image doesnt show, loading= makes image load when scrolled down to location on page-->
-    <a href="assets/cockpit.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
+    <figure>  <!--a semantic tag that represents self-contained graphical content such as illustrations, diagrams, photos, etc. -->
+      <img src="assets/cockpit.png" alt="A cockpit" title="AN IMAGE" loading="lazy" width="1500" height="400">
+      <!--src = file path of image, alt=text to show if image doesnt show, loading= makes image load when scrolled down to location on page-->
+      <a href="assets/cockpit.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
+    </figure>
 
 
     <aside style="width: 250px;border: 1px solid black; padding: 5px; margin: 5px; float: right;">
@@ -224,7 +226,7 @@
       </nav>
     </aside>   
 
-    <main>
+    <section>
         <h3>ABOUT US</h3> 
         <h4>nice to meet you</h4>
         <p>We're John and Jai, co-founders of Hydrant.<br>
@@ -232,7 +234,7 @@
            were trying to solve the same problem on opposite sides of the US.<br>
            After a friend connected us, the rest is history.
         </p> 
-    </main>
+      </section>
  
     <footer>    <!--usually the last part of the page-->
         <a href="#top">GO TO TOP</a>     <!--goes to where has the 'top' id attribute which is 'body' at the top-->
