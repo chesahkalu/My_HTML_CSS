@@ -18,10 +18,10 @@ makes the code easier to read , makes the site more accessible , leads to better
     - `<header>`	defines the header of a document or section of a document.
     - `<footer>`	defines the footer of a document or section of a document.
     - `<nav>`	define a section of the page that contains navigation links.
-    - `<article>`	used to specify independent, self-contained content.
+    - `<article>`	used to specify independent, self-contained content. Also represents a self-contained piece of content that can be reused.
     - `<aside>`	defines some content aside from the content it is placed in. It is more like a sidebar.
     - `<main>`	specifies the main content of a document.
-    - `<section>`	defines the section of a document.
+    - `<section>`	defines the the stanalone section of a document.
     - `<details>`	defines additional details that the user can view or hide
     - `<summary>`	defines the visible heading for the `<details>` element.
 
