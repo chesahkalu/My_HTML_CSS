@@ -81,16 +81,24 @@ is good practice to always make your styling in a different CSS code file, and l
 * SELECTORS : Selectors are used to indicate which HTML element to style. This would range from specifying an entire type of element (Type selectors), to
 identifying a particular element with a tag, and using the tag(Class, Id) to select the elements.
 
-- Type Selector - selects all elements of a specific type, for example, p will select all p elements.
+    - Type Selector - selects all elements of a specific type, for example, p will select all p elements
+    - Class Selector - selects all elements with a specific class name, for example, .myclass will select all elements with class="myclass".
+    - ID Selector - selects a unique element with a specific ID, for example, #myid will select the element with id="myid".
+    - Universal Selector - selects all elements on the page, for example, * will select all elements.
+    - Attribute Selector - selects elements with a specific attribute, for example, [type="text"] will select all elements with type="text".
 
-- Class Selector - selects all elements with a specific class name, for example, .myclass will select all elements with class="myclass".
+* RULES : The CSS rules are used to set and define the prefrence, appearance and characteristics of the different parts of the selected elements.
 
-- ID Selector - selects a unique element with a specific ID, for example, #myid will select the element with id="myid".
-
-- Universal Selector - selects all elements on the page, for example, * will select all elements.
-
-- Attribute Selector - selects elements with a specific attribute, for example, [type="text"] will select all elements with type="text".
-
+    - Color - sets the color of the text, for example, color: red;.
+    - Background-color - sets the background color of an element, for example, background-color: #fff;.
+    - Font-size - sets the font size of the text, for example, font-size: 16px;.
+    - Font-family - sets the font family of the text, for example, font-family: Arial, sans-serif;.
+    - Margin - sets the margin around an element, for example, margin: 10px;.
+    - Padding - sets the padding inside an element, for example, padding: 10px;.
+    - Border - sets the border of an element, for example, border: 1px solid black;.
+    - Width - sets the width of an element, for example, width: 100px;.
+    - Height - sets the height of an element, for example, height: 100px;.
+    - Display - sets how an element should be displayed, for example, display: block;.
 
 
 
