@@ -72,3 +72,27 @@ makes the code easier to read , makes the site more accessible , leads to better
         * `<ins>` tag - Inserted Text
         * `<big>` tag - Big Text
         * `<small>` tag - Small Text
+
+## CSS pointers:
+* SYLING IN HTML : with a `<style>` tag and element in your HTML code, you can specify some of the design presentation of your HTML document. This is generally
+not advisable as this limits the semantics of your HTML documents. Although in some cases, adding some type of styling in the HTML document is unavoidable, it
+is good practice to always make your styling in a different CSS code file, and link them in your HTML file.
+
+* SELECTORS : Selectors are used to indicate which HTML element to style. This would range from specifying an entire type of element (Type selectors), to
+identifying a particular element with a tag, and using the tag(Class, Id) to select the elements.
+
+- Type Selector - selects all elements of a specific type, for example, p will select all p elements.
+
+- Class Selector - selects all elements with a specific class name, for example, .myclass will select all elements with class="myclass".
+
+- ID Selector - selects a unique element with a specific ID, for example, #myid will select the element with id="myid".
+
+- Universal Selector - selects all elements on the page, for example, * will select all elements.
+
+- Attribute Selector - selects elements with a specific attribute, for example, [type="text"] will select all elements with type="text".
+
+
+
+
+
+
