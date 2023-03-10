@@ -83,21 +83,24 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
 
     - Type Selector - selects all elements of a specific type, for example, p will select all p elements
     - Class Selector - selects all elements with a specific class name, for example, .myclass will select all elements with class="myclass".
+    Elements within HTML can have more than one class attribute value so long as each value is space separated. 
+    With that, we can place certain styles on all elements of one sort while placing other styles only on specific elements of that sort.
     - ID Selector - selects a unique element with a specific ID, for example, #myid will select the element with id="myid".
     - Universal Selector - selects all elements on the page, for example, * will select all elements.
     - Attribute Selector - selects elements with a specific attribute, for example, [type="text"] will select all elements with type="text".
 
-* RULES : The CSS rules are used to set and define the prefrence, appearance and characteristics of the different parts of the selected elements.
+* RULES : The CSS rules are used to set and define the preference, appearance and characteristics of the different property values of the selected elements.
 
     - Color - sets the color of the text, for example, color: red;.
     - Background-color - sets the background color of an element, for example, background-color: #fff;.
     - Font-size - sets the font size of the text, for example, font-size: 16px;.
     - Font-family - sets the font family of the text, for example, font-family: Arial, sans-serif;.
-    - Margin - sets the margin around an element, for example, margin: 10px;.
-    - Padding - sets the padding inside an element, for example, padding: 10px;.
-    - Border - sets the border of an element, for example, border: 1px solid black;.
-    - Width - sets the width of an element, for example, width: 100px;.
-    - Height - sets the height of an element, for example, height: 100px;.
+    - BOX MODEL: every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
+        * Margin - The outer space (or lack of space) surrounding the box. For example, margin: 10px;
+        * Border - The perimeter of the box. Borders can be invisible or they could be a thick colored line, for example, border: 1px solid black;.
+        * Padding - The inner space between the content and the border of your box., for example, padding: 10px;.
+        * Width - sets the width of an element content, for example, width: 100px;.
+        * Height - sets the height of an element content, for example, height: 100px;.
     - Display - sets how an element should be displayed, for example, display: block;.
 
 
