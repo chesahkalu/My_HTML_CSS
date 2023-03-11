@@ -95,6 +95,7 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     - Font-size - sets the font size of the text, for example, font-size: 16px;.
     - Font-family - sets the font family of the text, for example, font-family: Arial, sans-serif;.
     - BOX MODEL: every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
+        * ![My Image](assets/box-model.PNG)
         * Margin - The outer space (or lack of space) surrounding the box. For example, margin: 10px;
         * Border - The perimeter of the box. Borders can be invisible or they could be a thick colored line, for example.Borders can have different appearances.
         The most common style values are solid, double, dashed, dotted, and none,  border: 1px solid black;
