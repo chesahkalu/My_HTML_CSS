@@ -8,8 +8,7 @@ CSS works by specifying rules for how different HTML elements should be displaye
 
 ## HTML pointers :
 * [RESSET](./resset.css) : Every web browser has its own default styles for different elements. How `Google Chrome` renders headings, paragraphs, lists, and so forth may be different from how `Internet Explorer` does. To ensure cross-browser `compatibility`, it is a good practice to implement a `resset` of all parts and elements of your html to a `uniform` basic raw form , before implementing your actuall `css` styling. 
-This file contains the popular `Eric Meyer's` css resset code, which would be linked in the `head` element of your HTML code, to resset every other values of each element to
-a uniform font,colour,size etc. 
+This file contains the popular `Eric Meyer's` css resset code, which would be linked in the `head` element of the basic HTML code, to resset every other values of each element to a uniform font,colour,size etc. Subsequently, the content of the file will be copied into the begining of our other csss files.
 
 * SEMANTIC_CODE : Dessist from styling, colouring or adding fonts to your page using HTML, that is the job of `css` in a seperate file. HTML should be the carrier of the page content structured properly with the proper elements and tools. This gives an ideal interpretation of the content , meaning and usage of the page to both the computer and human users. Including `css` sstyling codes in your `HTML` code file is bad practice:x:
 Also use semantic tags to accurately describe their purpose and describe the type of their element content. Semantics tags clearly describe the purpose of a code,
