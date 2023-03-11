@@ -88,7 +88,7 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     - Universal Selector - selects all elements on the page, for example, * will select all elements.
     - Attribute Selector - selects elements with a specific attribute, for example, [type="text"] will select all elements with type="text".
 
-* RULES : The CSS rules are used to set and define the preference, appearance and characteristics of the different property values of the selected elements.
+* PROPERTIES AND VALUES : These are used to set and define the preference, appearance and characteristics of the different property values of the selected elements.
 
     - Color - sets the color of the text, for example, color: red;.
     - Background-color - sets the background color of an element, for example, background-color: #fff;.
@@ -96,6 +96,7 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     - Font-family - sets the font family of the text, for example, font-family: Arial, sans-serif;.
     - BOX MODEL: every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
         * ![My Image](assets/box-model.PNG)
+        * Box-sizing - property used to change exactly how the box model works and how an element’s size is calculated
         * Margin - The outer space (or lack of space) surrounding the box. For example, margin: 10px;
         * Border - The perimeter of the box. Borders can be invisible or they could be a thick colored line, for example.Borders can have different appearances.
         The most common style values are solid, double, dashed, dotted, and none,  border: 1px solid black;
@@ -105,7 +106,17 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     The margin and padding properties are completely transparent and do not accept any color values. Being transparent, though, they show the background colors of relative elements. For margins, we see the background color of the parent element, and for padding, we see the background color of the element the padding is applied to.
     - Display - sets how an element should be displayed, for example, display: block;.
 
-
+* RULES : 
+    - VENDOR PREFIX: CSS Vendor prefixes (or browser prefixes) are a way for browsers to give access to new CSS features(properties) not yet considered stable. By using prefixes, we can use these newer CSS features with the browsers that support them — instead of waiting for all browsers to catch up.
+    Common vendor prefixes: Mozilla Firefox: `-moz-` , Microsoft Internet Explorer: `-ms-` , Opera: `-o-`, Webkit (Google Chrome,Apple Safari,Andriod,IOS): `-webkit-`
+    In most cases, to use a brand new CSS style property, you take the standard CSS property and add the prefix for each browser.The prefixed versions would always come first (in any order you prefer) while the normal CSS property will come last. When a property or value needs a vendor prefix, the prefix will only be used in the introduction of that property or value (in the interest of keeping our code digestible and concise). eg
+    ```
+    div {
+    -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+    }
+    ```
 
 
 
