@@ -72,9 +72,18 @@ table {
     font-family: cursive;
 }
 
+.item{
+    padding:30px 20px;
+    font-family: fantasy;
+}
+
+.itemm{
+    font-size:30px;
+    padding: 30px 30px;
+    
+}
+
 .na{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: center;
+    display:flex
 }
     
