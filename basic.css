@@ -57,10 +57,24 @@ table {
     justify-content: space-between;
     margin: 0 auto;
     padding: 10px 30px;
-    background-color: khaki;
+    background-color: rgb(237, 226, 15);
 }
 
 .he{
-    font-size: 60px;
-    font-
+    color: rgb(255, 5, 242);
+    font-size: 55px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
 }
+
+.pe{
+    color:rgba(6, 20, 82, 0.522);
+    font-family: cursive;
+}
+
+.na{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+    
