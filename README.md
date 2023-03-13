@@ -110,6 +110,8 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     To prevent content from wrapping around floated elements, we need to clear, or contain, those floats and return the page to its normal flow. Eg footer {clear: both;} :
     to clear from both left and right floats.
 
+    When building a website, it is always best to write modular styles that may be reused elsewhere, and reusable layouts are high on the list of reusable code. Layouts can be created using either floats or inline-block elements.
+
 
 
 
