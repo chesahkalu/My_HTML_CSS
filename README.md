@@ -105,9 +105,22 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
         * Box-sizing - property used to change exactly how the box model works and how an element’s size is calculated.
         eg. box-sizing: border-box;
             -   the border-box value alters the box model so that any border or padding property values are included within the width and height of an element. When using the border-box value, if an element has a width of 400 pixels, a padding of 20 pixels around every side, and a border of 10 pixels around every side, the actual width will remain 400 pixels.If we add a margin, those values will need to be added to calculate the full box size. No matter which box-sizing property value is used, any margin values will need to be added to calculate the full size of the element. The margin and padding properties are completely transparent and do not accept any color values. Being transparent, though, they show the background colors of relative elements. For margins, we see the background color of the parent element, and for padding, we see the background color of the element the padding is applied to.
-    - Display - sets how an element should be displayed, for example, display: block;.
+    - Display - sets how an element should be displayed, for example, display: inline-block. Block-level elements occupy any available width, regardless of their content, and begin on a new line. Inline-level elements occupy only the width their content requires(cant have their box model properties changed) and line up on the same line, one after the other. Inline-block element value will allow an element to behave as a block-level element, accepting all box model properties (EG WIDTH, PADDING ETC). However, the element will be displayed in line with other elements, and it will not begin on a new line by default.
+    - Float - Essentially, the float property allows us to take an element, remove it from the normal flow of a page, and position it to the left or right of its parent element. An element with a display value of inline, such as the <span> inline-level element, ignores any height or width property values. However, should that inline-level element be floated, its display value will be changed to block, and it may then accept height or width property values. Eg - section {float: left;}
+    To prevent content from wrapping around floated elements, we need to clear, or contain, those floats and return the page to its normal flow. Eg footer {clear: both;} :
+    to clear from both left and right floats.
+
+
+
+
 
 * RULES : 
+    - CASCADE: Within CSS, all styles cascade from the top of a style sheet to the bottom, allowing different styles to be added or overwritten as the style sheet progresses.
+
+    - SPECIFITY: Every selector in CSS has a specificity weight. A selector’s specificity weight, along with its placement in the cascade, identifies how its styles will be rendered. Specifity weight is from lowest to highest TYPE -> CLASS -> ID. For example, if a paragraph element is selected using a type selector in one place and an ID selector in another, the ID selector will take precedence over the type selector regardless of where the ID selector appears in the cascade.
+
+    - COMBINNING SELECTORS: Selectors can be combined with a space between them to target different elements with same group of properties and values at the same time.
+
     - VENDOR PREFIX: CSS Vendor prefixes (or browser prefixes) are a way for browsers to give access to new CSS features(properties) not yet considered stable. By using prefixes, we can use these newer CSS features with the browsers that support them — instead of waiting for all browsers to catch up.
     Common vendor prefixes: Mozilla Firefox: `-moz-` , Microsoft Internet Explorer: `-ms-` , Opera: `-o-`, Webkit (Google Chrome,Apple Safari,Andriod,IOS): `-webkit-`
     In most cases, to use a brand new CSS style property, you take the standard CSS property and add the prefix for each browser.The prefixed versions would always come first (in any order you prefer) while the normal CSS property will come last. When a property or value needs a vendor prefix, the prefix will only be used in the introduction of that property or value (in the interest of keeping our code digestible and concise). eg

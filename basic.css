@@ -57,29 +57,34 @@ table {
     justify-content: space-between;
     margin: 0 auto;
     padding: 10px 30px;
-    background-color: rgb(237, 226, 15);
+    background-repeat: no-repeat;
+    background-size: 1680px;
+    background-image: url(assets/header_image.jpg);
 }
 
 .he{
-    color: rgb(255, 5, 242);
-    font-size: 55px;
-    font-family:'Times New Roman', Times, serif;
+    color: rgb(0, 194, 220);
+    font-size:80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
 }
 
 .pe{
-    color:rgba(6, 20, 82, 0.522);
+    color: chartreuse;
     font-family: cursive;
+    font-size: large;
 }
 
 .item{
     padding:30px 20px;
     font-family: fantasy;
+    color: chartreuse;
 }
 
 .itemm{
     font-size:30px;
     padding: 30px 30px;
+    color: chartreuse;
 
 }
 
