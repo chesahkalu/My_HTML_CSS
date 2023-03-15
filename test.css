@@ -56,15 +56,14 @@ header{
     margin: 0 auto;         /*sets upper margin to 0, and auto sets side magin to center box of element,padding and border*/
     width: 100%;             /*sets width to automatically fit the screen*/
     height: 80px;           /*sets height to 80, this would automatically set with font size if no height*/
-    background-color: aqua; /*sets header backgroung colour*/
+    background: radial-gradient(#4e967f, #4629a5);
 }
-
 
 .logo{
     font-size: 45px;
     font-family:Lucida;
-    font-weight:lighter;
-    color: blueviolet;
+    font-weight: bolder;
+    color: rgb(237, 249, 8);
     letter-spacing: .2em;
     font-style: italic;
     text-shadow: 10px 6px 4px rgb(255, 154, 2);
@@ -73,6 +72,7 @@ header{
 
 .small{
     font-style: italic;
+    color:rgb(57, 239, 1)
 }
 
 .row{
