@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header{
+    padding: 10px 30px;     /*sets top padding top and bottom padding to 10 and sides paddings to 30*/
+    margin: 0 auto;         /*sets upper margin to 0, and auto sets side magin to center box of element,padding and border*/
+    width: 100%;             /*sets width to automatically fit the screen*/
+    height: 80px;           /*sets height to 80, this would automatically set with font size if no height*/
+    background-color: aqua; /*sets header backgroung colour*/
+}
+
+
+.logo{
+    font-size: 45px;
+    font-family:Lucida;
+    font-weight:lighter;
+    color: blueviolet;
+    letter-spacing: .2em;
+    font-style: italic;
+    text-shadow: 10px 6px 4px rgb(255, 154, 2);
+}
+
+
+.small{
+    font-style: italic;
+}
+
+.row{
+    display: inline-block;      /*positions the elements to align horizontally*/
+    width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
+}
+
+
+.center{
+    display: inline-flex;       /*display flex makes it possible to manipulate how the content elements display, but flex make the element block line, hence inline-flex*/
+    flex-direction: row;        /*makes the content elements alignt horizontally*/
+    flex-wrap: wrap;            /*makes the content element stay within display in screen, rather than extending and requiring a scroll, it jumps to next line*/
+    justify-content: space-between; /*determines how element align, here, equall space between all*/
+    position: relative;         /*this is used to adjust tthe position of the element relative to its normal position while absolute is relative to its parent element,*/
+    bottom: 20px;               /*moves the element 20px from bottom*/
+    right: 30px;                /*moves the element 30px from the right*/
+}
+
+
+
+.right{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 20px;    
+}
+
+.emoji{
+    padding-left: 50px;         /*gives the elements a padding of 50 to the left, this enables aligning like the flex justify-content*/
+    font-size: x-large;
+}
+
+
+.item:hover{                    /*changes element colour when it is hovered over*/
+    color: red;
+}
+
+.item{
+    vertical-align: middle

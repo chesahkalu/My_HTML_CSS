@@ -94,6 +94,13 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     - Background-color - sets the background color of an element, for example, background-color: #fff;.
     - Font-size - sets the font size of the text, for example, font-size: 16px;.
     - Font-family - sets the font family of the text, for example, font-family: Arial, sans-serif;.
+    - Line Height - the distance between two lines of text (often referred to as leading) is declared using the line-height property.Line height may also be used to vertically center a single line of text within an element. Using the same property value for the line-height and height properties will vertically center the text:
+    ```
+    .btn {
+        height: 22px;
+        line-height: 22px;
+    }
+    ```
     - BOX MODEL: every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
         * ![My Image](assets/box-model.PNG)
         * Margin - The outer space (or lack of space) surrounding the box. For example, margin: 10px;
@@ -105,7 +112,7 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
         * Box-sizing - property used to change exactly how the box model works and how an element’s size is calculated.
         eg. box-sizing: border-box;
             -   the border-box value alters the box model so that any border or padding property values are included within the width and height of an element. When using the border-box value, if an element has a width of 400 pixels, a padding of 20 pixels around every side, and a border of 10 pixels around every side, the actual width will remain 400 pixels.If we add a margin, those values will need to be added to calculate the full box size. No matter which box-sizing property value is used, any margin values will need to be added to calculate the full size of the element. The margin and padding properties are completely transparent and do not accept any color values. Being transparent, though, they show the background colors of relative elements. For margins, we see the background color of the parent element, and for padding, we see the background color of the element the padding is applied to.
-    - Display - sets how an element should be displayed, for example, display: inline-block. Block-level elements occupy any available width, regardless of their content, and begin on a new line. Inline-level elements occupy only the width their content requires(cant have their box model properties changed) and line up on the same line, one after the other. Inline-block element value will allow an element to behave as a block-level element, accepting all box model properties (EG WIDTH, PADDING ETC). However, the element will be displayed in line with other elements, and it will not begin on a new line by default.
+    - Display - sets how an element should be displayed, for example, display: `inline-block`. Block-level elements occupy any available width, regardless of their content, and begin on a new line. `Inline-level` elements occupy only the width their content requires(cant have their box model properties changed) and line up on the same line, one after the other. `Inline-block` element value will allow an element to behave as a block-level element, accepting all box model properties (EG WIDTH, PADDING ETC). However, the element will be displayed in line with other elements, and it will not begin on a new line by default.
     - Float - Essentially, the float property allows us to take an element, remove it from the normal flow of a page, and position it to the left or right of its parent element. An element with a display value of inline, such as the <span> inline-level element, ignores any height or width property values. However, should that inline-level element be floated, its display value will be changed to block, and it may then accept height or width property values. Eg - section {float: left;}
     To prevent content from wrapping around floated elements, we need to clear, or contain, those floats and return the page to its normal flow. Eg footer {clear: both;} :
     to clear from both left and right floats.
