@@ -64,6 +64,25 @@ header{
     width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
 }
 
+.center{
+    display: inline-flex;       /*display flex makes it possible to manipulate how the content elements display, but flex make the element block line, hence inline-flex*/
+    flex-direction: row;        /*makes the content elements alignt horizontally*/
+    flex-wrap: wrap;            /*makes the content element stay within display in screen, rather than extending and requiring a scroll, it jumps to next line*/
+    justify-content: space-between; /*determines how element align, here, equall space between all*/
+    position: relative;         /*this is used to adjust the position of the element relative to its normal position while absolute is relative to its parent element,*/
+    bottom: 20px;               /*moves the element 20px from bottom*/
+    right: 20px;                /*moves the element 30px from the right*/
+}
+
+.right{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 20px;
+}
+
 .logo{
     font-size: 45px;
     font-family:Lucida;
@@ -74,37 +93,34 @@ header{
     text-shadow: 10px 6px 4px rgb(255, 154, 2);
 }
 
-
 .small{
     font-style: italic;
     color:rgb(57, 239, 1)
 }
 
-
-.center{
-    display: inline-flex;       /*display flex makes it possible to manipulate how the content elements display, but flex make the element block line, hence inline-flex*/
-    flex-direction: row;        /*makes the content elements alignt horizontally*/
-    flex-wrap: wrap;            /*makes the content element stay within display in screen, rather than extending and requiring a scroll, it jumps to next line*/
-    justify-content: space-between; /*determines how element align, here, equall space between all*/
-    position: relative;         /*this is used to adjust the position of the element relative to its normal position while absolute is relative to its parent element,*/
-    bottom: 20px;               /*moves the element 20px from bottom*/
-    right: 30px;                /*moves the element 30px from the right*/
-}
-
-
-
-.right{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 20px;    
+.item{
+    margin-left;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(5, 57, 102, 0.966);
+    font-weight: bold;
+    text-decoration: none;  /*removes the line undeer the link*/
 }
 
 .emoji{
     padding-left: 50px;         /*gives the elements a padding of 50 to the left, this enables aligning like the flex justify-content*/
     font-size: xx-large;
+    text-decoration: none;
+    color: #778681;
+    font-weight: bolder;
+}
+
+.tag{
+    position: relative;
+    top: 27px;
+    right: 30px;
+    color: rgb(224, 137, 23);
+    font-style: italic;
 }
 
 .dropdown:hover .dropdown-cont{
@@ -121,8 +137,8 @@ header{
     z-index: 1;
   }
 
-  .item {
-    text-decoration: none;
+  .item  {
+    
 }
   
 
