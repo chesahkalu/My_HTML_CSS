@@ -123,19 +123,35 @@ header{
     font-style: italic;
 }
 
-.dropdown:hover .dropdown-cont{
-    display: block;
-  }
-
-.dropdown-cont{
-    display: none;
+.dropdown-cont{ /*detailss of drop down element, hidden by default*/
+    display: none;  /*hides the element*/
     position: absolute;
-    background-color: #817373;
-    min-width: 150px;
+    background-color: rgb(207, 159, 86);
+    min-width: 170px;
     border-radius: 10px;
     box-shadow: 10px 6px 4px rgb(116, 72, 15);
     z-index: 1;
   }
+
+  .dropdown-cont a {
+    text-decoration: none;
+    color: rgb(13, 35, 26);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-cont{
+    display: block;
+  }
+
+.dropdown:hover .item{
+    color: rgb(215, 153, 61);
+}
+
+.dropdown-cont a:hover{
+    color:aqua;
+}
 
   .item  {
     
@@ -149,5 +165,5 @@ header{
   
 
 .item:hover{                    /*changes element colour when it is hovered over*/
-    color: red;
+    color: re
 }
