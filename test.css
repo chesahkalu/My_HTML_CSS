@@ -123,6 +123,10 @@ header{
     font-style: italic;
 }
 
+.item:hover{                    /*changes element colour when it is hovered over*/
+    color: rgb(215, 153, 61);
+}
+
 .dropdown-cont{ /*detailss of drop down element, hidden by default*/
     display: none;  /*hides the element*/
     position: absolute;
@@ -133,7 +137,7 @@ header{
     z-index: 1;
   }
 
-  .dropdown-cont a {
+  .dropdown-cont a {        /*drop down links properties*/
     text-decoration: none;
     color: rgb(13, 35, 26);
     padding: 10px 16px;
@@ -141,29 +145,18 @@ header{
     display: block;
   }
 
-.dropdown:hover .dropdown-cont{
+.dropdown:hover .dropdown-cont{     /*showss dropdown menu on hover in block display*/
     display: block;
   }
 
-.dropdown:hover .item{
+.dropdown:hover .item{  /*links behaviour when dropdown is shown*/ 
     color: rgb(215, 153, 61);
 }
 
-.dropdown-cont a:hover{
+.dropdown-cont a:hover{  /*dropdown links behaviour on hover*/
     color:aqua;
 }
 
-  .item  {
-    
-}
   
 
-  .dropdown-cont a{
-    display: block;
-    padding: 15px 15px;
-  }
-  
 
-.item:hover{                    /*changes element colour when it is hovered over*/
-    color: re
-}
