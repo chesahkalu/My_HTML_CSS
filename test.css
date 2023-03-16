@@ -59,6 +59,11 @@ header{
     background: radial-gradient(#4e967f, #4629a5);
 }
 
+.row{
+    display: inline-block;      /*positions the elements to align horizontally*/
+    width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
+}
+
 .logo{
     font-size: 45px;
     font-family:Lucida;
@@ -75,18 +80,13 @@ header{
     color:rgb(57, 239, 1)
 }
 
-.row{
-    display: inline-block;      /*positions the elements to align horizontally*/
-    width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
-}
-
 
 .center{
     display: inline-flex;       /*display flex makes it possible to manipulate how the content elements display, but flex make the element block line, hence inline-flex*/
     flex-direction: row;        /*makes the content elements alignt horizontally*/
     flex-wrap: wrap;            /*makes the content element stay within display in screen, rather than extending and requiring a scroll, it jumps to next line*/
     justify-content: space-between; /*determines how element align, here, equall space between all*/
-    position: relative;         /*this is used to adjust tthe position of the element relative to its normal position while absolute is relative to its parent element,*/
+    position: relative;         /*this is used to adjust the position of the element relative to its normal position while absolute is relative to its parent element,*/
     bottom: 20px;               /*moves the element 20px from bottom*/
     right: 30px;                /*moves the element 30px from the right*/
 }
@@ -104,21 +104,33 @@ header{
 
 .emoji{
     padding-left: 50px;         /*gives the elements a padding of 50 to the left, this enables aligning like the flex justify-content*/
-    font-size: x-large;
+    font-size: xx-large;
 }
+
+.dropdown:hover .dropdown-cont{
+    display: block;
+  }
 
 .dropdown-cont{
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #817373;
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 10px 6px 4px rgb(116, 72, 15);
     z-index: 1;
   }
+
+  .item {
+    text-decoration: none;
+}
   
-  .dropdown:hover .dropdown-cont{
+
+  .dropdown-cont a{
     display: block;
+    padding: 15px 15px;
   }
+  
 
 .item:hover{                    /*changes element colour when it is hovered over*/
     color: red;
