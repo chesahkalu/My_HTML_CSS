@@ -56,7 +56,8 @@ header{
     margin: 0 auto;         /*sets upper margin to 0, and auto sets side magin to center box of element,padding and border*/
     width: 100%;             /*sets width to automatically fit the screen*/
     height: 80px;           /*sets height to 80, this would automatically set with font size if no height*/
-    background: radial-gradient(#4e967f, #4629a5);
+    background-color: rgb(163, 232, 232);
+    ackground: radial-gradient(#a42d9e, #191a10);
 }
 
 .row{
@@ -87,23 +88,24 @@ header{
     font-size: 45px;
     font-family:Lucida;
     font-weight: bolder;
-    color: rgb(237, 249, 8);
+    color: rgb(10, 33, 32);
     letter-spacing: .2em;
     font-style: italic;
-    text-shadow: 10px 6px 4px rgb(255, 154, 2);
+    text-shadow: 5px 5px 5px rgb(227, 76, 7);
 }
 
 .small{
     font-style: italic;
-    color:rgb(57, 239, 1)
+    color:rgba(0, 0, 0, 0.764)
 }
 
 .item{
     margin-left;
     font-size: 16px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgba(5, 57, 102, 0.966);
+    color: rgba(208, 33, 33, 0.966);
     font-weight: bold;
+    font-family:cursive;
     text-decoration: none;  /*removes the line undeer the link*/
 }
 
@@ -111,7 +113,7 @@ header{
     padding-left: 50px;         /*gives the elements a padding of 50 to the left, this enables aligning like the flex justify-content*/
     font-size: xx-large;
     text-decoration: none;
-    color: #778681;
+    color: #4a9b96;
     font-weight: bolder;
 }
 
@@ -119,30 +121,35 @@ header{
     position: relative;
     top: 27px;
     right: 30px;
-    color: rgb(224, 137, 23);
+    color: rgb(0, 0, 0);
     font-style: italic;
 }
 
 .item:hover{                    /*changes element colour when it is hovered over*/
-    color: rgb(215, 153, 61);
+    color: rgb(0, 0, 139);
 }
 
-.dropdown-cont{ /*detailss of drop down element, hidden by default*/
+.emoji:hover{
+  color: rgb(0,0,139);
+}
+
+.dropdown-cont{ /*details of drop down element, hidden by default*/
     display: none;  /*hides the element*/
     position: absolute;
-    background-color: rgb(207, 159, 86);
+    background-color: rgb(163, 232, 232);
     min-width: 170px;
     border-radius: 10px;
-    box-shadow: 10px 6px 4px rgb(116, 72, 15);
+    box-shadow: 10px 6px 4px rgb(3, 16, 16);
     z-index: 1;
   }
 
   .dropdown-cont a {        /*drop down links properties*/
     text-decoration: none;
     color: rgb(13, 35, 26);
-    padding: 10px 16px;
+    padding: 20px 30px;
     text-decoration: none;
     display: block;
+    color: rgba(208, 33, 33, 0.966); 
   }
 
 .dropdown:hover .dropdown-cont{     /*showss dropdown menu on hover in block display*/
@@ -150,11 +157,11 @@ header{
   }
 
 .dropdown:hover .item{  /*links behaviour when dropdown is shown*/ 
-    color: rgb(215, 153, 61);
+    color: rgb(0, 0, 130);
 }
 
 .dropdown-cont a:hover{  /*dropdown links behaviour on hover*/
-    color:aqua;
+    color:rgb(0, 0, 133);
 }
 
   
