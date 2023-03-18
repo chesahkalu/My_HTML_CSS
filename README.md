@@ -141,5 +141,9 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     }
     ```
 
+    - RESPONSSIVE WEB DESIGN: This uses a mix of flexible grids and layouts implemented to classes to creat a dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it.
+
+    
+
 
 

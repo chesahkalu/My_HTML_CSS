@@ -51,18 +51,35 @@ table {
           box-sizing: border-box;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 header{
     padding: 10px 30px;     /*sets top padding top and bottom padding to 10 and sides paddings to 30*/
     margin: 0 auto;         /*sets upper margin to 0, and auto sets side magin to center box of element,padding and border*/
-    width: 100%;             /*sets width to automatically fit the screen*/
+    max-widt;            /*sets width to automatically fit the screen*/
     height: 80px;           /*sets height to 80, this would automatically set with font size if no height*/
+    background: linear-gradient(to right, rgb(0, 229, 255),rgb(227, 231, 47));
     background-color: rgb(163, 232, 232);
+    border-style: solid;
+    border-bottom-width: 3px;
+    border-color: rgb(255, 0, 0);
     ackground: radial-gradient(#a42d9e, #191a10);
 }
 
 .row{
     display: inline-block;      /*positions the elements to align horizontally*/
-    width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
+    /*width: 33%;                 /*sets each of the element to 33% width of the parent element(header) which is taking the width of the screen*/
 }
 
 .center{
@@ -88,11 +105,13 @@ header{
     font-size: 45px;
     font-family:Lucida;
     font-weight: bolder;
-    color: rgb(10, 33, 32);
+    color: rgb(255, 25, 0);;
     letter-spacing: .2em;
     font-style: italic;
-    text-shadow: 5px 5px 5px rgb(227, 76, 7);
+    text-shadow: 1px 6px 6px rgb(0, 0, 0);
 }
+
+
 
 .small{
     font-style: italic;
@@ -104,9 +123,9 @@ header{
     font-size: 16px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgba(208, 33, 33, 0.966);
-    font-weight: bold;
     font-family:cursive;
-    text-decoration: none;  /*removes the line undeer the link*/
+    font-weight: bold;
+    text-decoration: none;  /*removes the line under the link*/
 }
 
 .emoji{
@@ -140,7 +159,15 @@ header{
     min-width: 170px;
     border-radius: 10px;
     box-shadow: 10px 6px 4px rgb(3, 16, 16);
-    z-index: 1;
+    z-index: 1; /*specifies the stack order of an element (which element should be placed in front of, or behind, the others).An element can have a positive or negative stack order:*/
+    animation-name: drop; /*an animation effect is tagged for creation with keyframes*/
+    animation-duration: 6s;   
+    /*animation-iteration-count: 3;*/
+  }
+
+  @keyframes drop {      /*example animation binded to the element that has it*/
+    from {background-color: rgb(163, 232, 232);}
+    to {background-color: rgba(227, 231, 47, 0.872)}
   }
 
   .dropdown-cont a {        /*drop down links properties*/
@@ -149,6 +176,8 @@ header{
     padding: 20px 30px;
     text-decoration: none;
     display: block;
+    border-style:dotted;
+    border-width: 1px;
     color: rgba(208, 33, 33, 0.966); 
   }
 
@@ -163,7 +192,51 @@ header{
 .dropdown-cont a:hover{  /*dropdown links behaviour on hover*/
     color:rgb(0, 0, 133);
 }
+.ladies{
+  display: inline-flex; /*makes all element align horizontally*/
+  width: 100%; /*fits the whole element to the screen width*/
+  background-color: rgb(237, 131, 0);
+}
 
-  
+.ladies-a{
+  height: 860px;
+  width: 100%; /*fixes width perfectly into remaining space*/
+}
+.womenn{
+  display:block; /*removes white spaces between the elements*/
+  border-style: solid;
+  border-width: 1px;
+  border-color:#fffb00;
+  height: 25%;
+  width: 100%;
+}
+
+.gents-a{
+  height: 860px;
+  width: 100%;
+}
+
+.menn{
+  display:block;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#fffb00;
+  height: 25%;
+  width: 100%;
+}
 
 
+
+.womenn:hove{
+  animation-name: womenn;
+  animation-duration: infinite;
+  border-color: rgba(227, 231, 47, 0.872); 
+
+}
+
+.menn:hovr{
+  animation-name: womenn;
+  animation-duration: infinite;
+  border-color: rgba(227, 231, 47, 0.872);
+
+}
