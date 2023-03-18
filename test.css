@@ -155,8 +155,8 @@ header{
 .dropdown-cont{ /*details of drop down element, hidden by default*/
     display: none;  /*hides the element*/
     position: absolute;
-    background-color: rgb(163, 232, 232);
     min-width: 170px;
+    background-color: rgba(227, 231, 47, 0.872);
     border-radius: 10px;
     box-shadow: 10px 6px 4px rgb(3, 16, 16);
     z-index: 1; /*specifies the stack order of an element (which element should be placed in front of, or behind, the others).An element can have a positive or negative stack order:*/
@@ -207,8 +207,41 @@ header{
   border-style: solid;
   border-width: 1px;
   border-color:#fffb00;
-  height: 25%;
+  height: auto;
   width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.show {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .show{
+  width: 100%;
+}
+
+.text{
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .gents-a{
