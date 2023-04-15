@@ -141,8 +141,13 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
     }
     ```
 
-    - RESPONSSIVE WEB DESIGN: This uses a mix of flexible grids and layouts implemented to classes to creat a dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it.
+    - RESPONSSIVE WEB DESIGN: This uses a mix of flexible grids and layouts implemented to classes to creat a dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it. eg:
+    `display: inline-grid` - allows the elements to be displayed side by side on the same line, while still retaining the benefits of a grid layout. This can be useful in creating responsive designs where you want to display elements in a grid on larger screens, but in a single line on smaller screens.
+    Using inline-grid creates a grid container where the grid items are laid out like inline-level elements, with additional grid-related properties available to control the grid layout. This is different from block and inline display types, which create block-level and inline-level elements respectively.
 
+    `display: flex:` This sets the display property to flex, which enables the use of flexbox layout on the element. Flexbox is a powerful layout system in CSS that makes it easy to align and distribute elements within a container.
+    
+    `flex-wrap: wrap:` This sets the flex-wrap property to wrap, which allows the flex items to wrap onto multiple lines if they don't fit within the container. This can be useful for creating responsive layouts where the number of items in a row needs to adjust based on the available width.
     
 
 
