@@ -70,15 +70,15 @@
       <p>Hidden content</p>
    </details>
   
+<hr>
 
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" name="name"><br><br>
+    <form action="" method="get"> <!--action is the path to the page that will process the form, method is the method used to send the form data-->
+      <label for="name">Name:</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers)-->
+      <input type="text" name="name" placeholder="name" required><br><br><!--input element is used to accept data from the user, type is the type of input, name is the name of the input, placeholder is the text that shows up in the input box-->
       <label for="sex">Sex:</label>
-      <input type="radio" name="sex" id="male" value="male">
+      <input type="radio" name="sex" id="male" value="male"> <!--radio button is used to select one option from a list of options, id is used to identify specific element, value is the value of the input-->
       <label for="male">Male</label>
-      <input type="radio" name="sex" id="female" value="female">
-      <label for="female">Female</label> <br><br>
+      <label for="female"><input type="radio" name="sex" id="female" value="female">Female</label> <br><br> <!--giving both radio button same name makes them a group, only one can be selected-->
       <label for="country">Country: </label>
       <select name="country" id="country">
           <option>Select an option</option>
@@ -92,6 +92,7 @@
       <input type="checkbox" name="newsletter" id="newsletter">
       <label for="newsletter">Subscribe?</label><br><br>
       <input type="submit" value="Submit">
+      <!-- also you can creat a button in form element ,clicking a form button without any attributes submits the form to the location specified in the form's action attribute-->
   </form>
 
     <hr>
@@ -211,10 +212,11 @@
 
     <hr>
 
-    <figure>  <!--a semantic tag that represents self-contained graphical content such as illustrations, diagrams, photos, etc. -->
+    <figure>  <!--a semantic tag that represents self-contained graphical content such as illustrations, diagrams, photos, etc. and allows you to associate an image with a caption -->
       <img src="assets/cockpit.png" alt="A cockpit" title="AN IMAGE" loading="lazy" width="1500" height="400">
       <!--src = file path of image, alt=text to show if image doesnt show, loading= makes image load when scrolled down to location on page-->
-      <a href="assets/cockpit.png" download="basic"> Download Image </a> <!--download whatever file is in the ref link, with name as basic-->
+      <a href="assets/cockpit.png" download="basic"> Download </a> <!--download whatever file is in the ref link, with name as basic-->
+      <figcaption>A cockpit</figcaption> <!--used to add a caption to describe the image contained within the figure element-->
     </figure>
 
 

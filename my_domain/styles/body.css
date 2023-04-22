@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #3c3131;
+    font-size: 14px;
+    background: linear-gradient( to right, rgb(255, 255, 255) 55%, rgb(0, 130, 206) 45%);
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}

@@ -1,0 +1,23 @@
+section article{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+section article h2{
+    margin:0;
+    padding:0;
+}
+
+section article p{
+    margin:0;
+    padding:0 0 10px 0;
+    font-size: 15px;
+    color: rgb(21, 97, 148);
+}
+
+section article a{
+    color: rgb(251, 0, 0);
+    font-size: 15px;
+    font-weight: bolder;
+}
