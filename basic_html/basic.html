@@ -1,4 +1,4 @@
-<!DOCTYPE html>     <!-- Doucment type declaration that it is HTML, declares the version of html-->
+<!DOCTYPE html>     <!-- Doucment type declaration that it is HTML, declares the version of html and ensures the browser tries to meet industry-wide specifications.-->
 
 <html lang="en">    <!--within this element is the actual codes,closed at the very last line. Within the opening tag defines the document laguage(an attribute for the element)-->
 
@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--tells the browser to load the webpage with the width of the device and with 1x zoom.-->
     <title>Basic HTML</title>  <!--title is the page title that shows up on the search engine and top and tabs of your browser-->
     <link rel="shortcut icon" href="assets/favicon.png"><!--A Favicon is a small image displayed on the left of the page title in the browser tab.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--tells the browser to load the webpage with the width of the device and with 1x zoom.For the styling of the page to look similar on mobile as it does on a desktop or laptop--> 
   </head>           <!--close the head tag to make it an element-->
 
   <body id="top">            <!--define main content about the page,has an attribute ID thatis ref to a hyperlink to go back to the top of the page-->
@@ -75,7 +76,7 @@
     <form action="" method="get"> <!--action is the path to the page that will process the form, method is the method used to send the form data-->
       <label for="name">Name:</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers)-->
       <input type="text" name="name" placeholder="name" required><br><br><!--input element is used to accept data from the user, type is the type of input, name is the name of the input, placeholder is the text that shows up in the input box-->
-      <label for="sex">Sex:</label>
+      <label for="sex">Sex:</label> <!--for attribute is used to bind the label to the input element-->
       <input type="radio" name="sex" id="male" value="male"> <!--radio button is used to select one option from a list of options, id is used to identify specific element, value is the value of the input-->
       <label for="male">Male</label>
       <label for="female"><input type="radio" name="sex" id="female" value="female">Female</label> <br><br> <!--giving both radio button same name makes them a group, only one can be selected-->
@@ -87,12 +88,27 @@
           <option value="australia">Australia</option>
           <option value="nigeria">Nigeria</option>
       </select><br><br>
-      <label for="message">Message:</label><br>
-      <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
-      <input type="checkbox" name="newsletter" id="newsletter">
-      <label for="newsletter">Subscribe?</label><br><br>
-      <input type="submit" value="Submit">
-      <!-- also you can creat a button in form element ,clicking a form button without any attributes submits the form to the location specified in the form's action attribute-->
+      <fieldset> <!--fieldset is used to group related elements in a form-->
+        <legend>Input Message</legend><!--legend is used to provide a caption for the fieldset element-->
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+        <input type="checkbox" name="newsletter" id="newsletter"> <!--checkbox is used to select multiple options from a list of options-->
+        <label for="newsletter">Subscribe?</label><br><br>
+        <input type="submit" value="Submit">
+        <!-- also you can creat a button in form element ,clicking a form button without any attributes submits the form to the location specified in the form's action attribute-->
+      </fieldset>
+      
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label> <!--checked attribute is used to specify that an input element should be pre-selected when the page loads-->
+        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+      </fieldset>
   </form>
 
     <hr>
