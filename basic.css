@@ -91,4 +91,397 @@ table {
 .na{
     display: flex;
 }
-    
+.desktop-1-default {
+  background: linear-gradient(
+    180deg,
+    rgba(142, 147, 167, 1) 18%,
+    rgba(196, 146, 72, 1) 30%,
+    rgba(75, 138, 221, 1) 33%,
+    rgba(207, 49, 50, 1) 47%,
+    rgba(143, 148, 168, 1) 57%,
+    rgba(172, 113, 92, 1) 82%,
+    rgba(1, 146, 225, 1) 93%
+  );
+  padding: 0 0 0 122px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.flex-wrapper-four {
+  margin-right: 11px;
+  padding: 46px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flex-wrapper-five {
+  margin-bottom: 332px;
+  padding: 0 0 0 52px;
+  display: flex;
+  align-items: flex-start;
+}
+.relative-wrapper-one {
+  margin-right: 90px;
+  position: relative;
+}
+.bobo {
+  height: 39px;
+  width: 121px;
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(120, 189, 66, 1);
+  display: flex;
+  position: relative;
+}
+.image-1 {
+  width: 73px;
+  height: 61px;
+  position: absolute;
+  left: -52px;
+  top: -30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.features {
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  right: -54px;
+  bottom: 4px;
+}
+.about-us {
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 12px;
+  margin-right: 31px;
+}
+.contact-us {
+  height: 26px;
+  width: 94px;
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  margin-top: 12px;
+}
+.track-milestones-navigate-early-parenth {
+  height: 186px;
+  width: 474px;
+  display: flex;
+  font-family: "Laila";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+}
+.track-milestones-navigate-early-parenth-emphasis-1 {
+  font-family: "Laila";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: rgba(123, 189, 65, 1);
+}
+.development {
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 59px;
+  margin-right: 5px;
+}
+.relative-wrapper-two {
+  position: relative;
+}
+.developed-for-parents-engineered-for-ba {
+  height: 134px;
+  width: 610px;
+  display: flex;
+  position: absolute;
+  left: -600px;
+  top: 274px;
+  font-family: "Lora";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+}
+.developed-for-parents-engineered-for-ba-emphasis-1 {
+  font-family: "Lora";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(117, 190, 65, 1);
+}
+.developed-for-parents-engineered-for-ba-emphasis-2 {
+  font-family: "Lora";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(151, 178, 75, 1);
+}
+.flex-wrapper-one {
+  background-size: 100% 100%;
+  background-position: center;
+  background: url("https://static.overlay-tech.com/assets/ce8060a9-a2f7-4b50-b0cf-37c0244d5165.png"),
+    rgba(217, 217, 217, 1);
+  padding: 57px 244px 939px 239px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.flex-wrapper-two {
+  background-color: rgba(122, 190, 64, 0.62);
+  margin-right: 35px;
+  border-radius: 10px;
+  padding: 3px 18px 2px 11px;
+  display: flex;
+  align-items: center;
+}
+.sign-in {
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+}
+.flex-wrapper-three {
+  background-color: rgba(122, 190, 64, 0.65);
+  border-radius: 10px;
+  padding: 4px 11px 4px 9px;
+  display: flex;
+  align-items: center;
+}
+.guest-mode {
+  height: 20px;
+  width: 96px;
+  font-family: "Lusitana";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+.features-two {
+  height: 81px;
+  width: 224px;
+  font-family: "Lusitana";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  position: absolute;
+  left: 120px;
+  bottom: -19px;
+}
+.component-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.desktop-1-default {
+  align-self: stretch;
+}
+.desktop-2 {
+  height: calc(31.53% - 50px);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 224, 224, 1) 0%,
+    rgba(237, 241, 250, 1) 100%
+  );
+  overflow: hidden;
+  padding: 48px 0 2px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  position: relative;
+}
+.milestones-visualize-age-specific-antic {
+  height: 449px;
+  width: 694px;
+  display: flex;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-left: 700px;
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(38, 179, 163, 1);
+}
+.milestones-visualize-age-specific-antic-emphasis-0 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(231, 41, 121, 1);
+}
+.milestones-visualize-age-specific-antic-emphasis-1 {
+  font-family: "Lusitana";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(38, 179, 163, 1);
+}
+.flex-wrapper-six {
+  display: flex;
+  align-items: flex-start;
+}
+.activities-engage-with-curated-age-sp {
+  height: 306px;
+  width: 668px;
+  display: flex;
+  text-align: center;
+  margin-top: 62px;
+  margin-right: 22px;
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(164, 80, 150, 1);
+}
+.activities-engage-with-curated-age-sp-emphasis-0 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(41, 142, 165, 1);
+}
+.activities-engage-with-curated-age-sp-emphasis-1 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+}
+.stacking-the-blocks-1 {
+  width: 720px;
+  height: 512px;
+}
+.photos-library-1 {
+  width: 720px;
+  height: 512px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.desktop-3 {
+  height: calc(36.95% - 44px);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0 24px 44px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.flex-wrapper-seven {
+  margin-bottom: 31px;
+  display: flex;
+  align-items: flex-start;
+}
+.untitled-1 {
+  width: 932px;
+  height: 569px;
+  margin-right: 29px;
+}
+.marketplace-buy-sell-and-exchange-bab {
+  height: 547px;
+  width: 455px;
+  display: flex;
+  text-align: center;
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(239, 84, 180, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-0 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 75, 82, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-2 {
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(246, 210, 0, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-3 {
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-4 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(116, 217, 249, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-6 {
+  font-family: "Lusitana";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(172, 113, 92, 1);
+}
+.marketplace-buy-sell-and-exchange-bab-emphasis-8 {
+  font-family: "Lusitana";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(168, 219, 86, 1);
+}
+.about-us-created-with-love-and-fueled {
+  height: 321px;
+  width: 1196px;
+  display: flex;
+  margin-bottom: 37px;
+  margin-left: 122px;
+  font-family: "Lusitana";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(172, 113, 92, 1);
+}
+.about-us-created-with-love-and-fueled-emphasis-1 {
+  font-family: "Lusitana";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+}
+.contact-us-victor-kalu-fullstack-soft {
+  height: 198px;
+  width: 572px;
+  display: flex;
+  margin-left: 122px;
+  font-family: "Lusitana";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(172, 113, 92, 1);
+}
+.contact-us-victor-kalu-fullstack-soft-emphasis-2 {
+  font-family: "Lusitana";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+}

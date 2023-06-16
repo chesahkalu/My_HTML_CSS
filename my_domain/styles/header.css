@@ -88,4 +88,20 @@ section div{
 }
 
 
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
 
+    .left, .right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .socials div {
+        width: 30px; /* reduce the size of the social icons on smaller screens */
+    }
+}

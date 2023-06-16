@@ -2,13 +2,25 @@ h1, h2, p {
     text-align: center;
   }
 
-body {
-/    background-color: burlywood;
+  body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*use and image as a background for an element*/
   }
   
   
-  div {
-    width: 80%; /*(1)The goal now is to make the div not take up the entire width of the page, taking 80% of parent element width*/
+ .menu {
+    width: 80%;/*(1)The goal now is to make the div not take up the entire width of the page, taking 80% of parent element width*/
     background-color: burlywood;
-    margin: 0   auto; /*(2)The goal now is to center the div on the page*/
+    margin: 0  auto; /*(2)The goal now is to center the div on the page*/
+  }
+
+  .item p { 
+    display:inline-block; /*with this property, the p element in any item class will be displayed as an inline-level block container, following eachother horizontally. The element itself is formatted as an inline element, but you can apply height and width values becasue they are block too*/
+  }
+  
+  .flavor {
+    text-align: left; 
+  }
+  
+  .price {
+    text-align: right;
   }
