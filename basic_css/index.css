@@ -2,6 +2,12 @@ h1, h2, p {
     text-align: center;
   }
 
+  img{
+    display: block; /*set the display property of the element to block, images are inline by default,  to be able to set the margin property, we need to set the display property to block*/
+    margin: 0 auto; /*set the margin for the top and bottom of the element*/
+    margin-top: -25px; /*set the margin for the top of the element, this is a negative value, so the image will move up*/
+  }
+
   h1, h2{
     font-family: Impact, serif; /*this is how to add fallback fonts, if the first font is not available, the browser will try the next font*/
   }
@@ -11,16 +17,29 @@ h1, h2, p {
   }
 
   h2 {
-    font-size: 30px; 
+    font-size: 30px;
+    margin-top: 0; /*set the margin for the top of the element*/
+    margin-bottom: 15px; /*set the margin for the bottom of the element*/ 
   }
 
   body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*use and image as a background for an element*/
     font-family: sans-serif; /*set the font family for all text in these elements*/
+    padding: 20px; 
   }
   
   .established{
     font-style: italic; /*set the font style for all text in this element*/
+  }
+
+  hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown; /*set the border color for all sides of the element*/
+  }
+
+  .bottom-line{
+    margin-top: 25px;
   }
   
  .menu {
@@ -35,6 +54,8 @@ h1, h2, p {
 
   .item p { 
     display:inline-block; /*with this property, the p element in any item class will be displayed as an inline-level block container, following eachother horizontally. The element itself is formatted as an inline element, but you can apply height and width values becasue they are block too*/
+    margin: 5px 0 5px 0; /* this sets the margin for all 4 sides of the element, the first 5px is for the top margin, the second 0px is for the right margin, the third 5px is for the bottom margin, the fourth 0px is for the left margin*/
+    font-size: 18px;
   }
   
   .flavor, .dessert { /*here is how to add to class selectors on a style*/
@@ -45,4 +66,24 @@ h1, h2, p {
   .price {
     text-align: right;
     width: 25%;
+  }
+
+
+  /*FOOTER and links styling*/
+
+  .address {
+    margin-bottom: 5px;
+  }
+
+  a{
+    color: black; /*this is how to style a link*/
+  }
+
+  a:visited {color: grey /*this is how to style a link that has been visited*/
+  }
+
+  a:hover { color: brown /*this is how to style a link when the mouse hovers over it*/
+  }
+
+  a:active { color: white /*this is how to style a link when it is clicked*/
   }
