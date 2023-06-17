@@ -10,7 +10,10 @@
     <p>Please fill out this form with the required information</p>
     <form method="post" action='https://register-demo.freecodecamp.org'><!--action is the path to the page that will process the form, method is the method used to send the form data-->
         <fieldset> <!--fieldset is used to group related elements in a form-->
-            <label for="name">Enter Your First Name:</label><!--label elements are used to help associate the text for an input element with the input element itself.Stating the input that should go there (especially for assistive technologies like screen readers)-->
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text"/></label><!--label elements are used to help associate the text for an input element with the input element itself.Stating the input that should go there (especially for assistive technologies like screen readers)-->
+            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text"/></label> <!--input provides the space to input the data-->
+            <label for="email">Enter Your Email: <input id="email" type="email"/></label> <!--the for and id links the input to the label,id identifies the input, and for specifiys the label is for a particular input with an id-->
+            <label for="new-password">Create a New Password: <input id="new-password" type="password"/></label> <!--Specifying the type attribute of a form element is important for the browser to know what kind of data it should expect. If the type is not specified, the browser will default to text.-->
             </fieldset>
     </form>
   </body>
