@@ -2,25 +2,47 @@ h1, h2, p {
     text-align: center;
   }
 
+  h1, h2{
+    font-family: Impact, serif; /*this is how to add fallback fonts, if the first font is not available, the browser will try the next font*/
+  }
+
+  h1 {
+    font-size: 40px; /*set the font size for all text in this element*/
+  }
+
+  h2 {
+    font-size: 30px; 
+  }
+
   body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*use and image as a background for an element*/
+    font-family: sans-serif; /*set the font family for all text in these elements*/
   }
   
+  .established{
+    font-style: italic; /*set the font style for all text in this element*/
+  }
   
  .menu {
     width: 80%;/*(1)The goal now is to make the div not take up the entire width of the page, taking 80% of parent element width*/
     background-color: burlywood;
-    margin: 0  auto; /*(2)The goal now is to center the div on the page*/
+    margin: 0  auto; /*(2)The goal now is to center the div on the page, auto will center the div on the page, the 0 is for the top and bottom margin, the auto is for the left and right margin*/
+    padding:20px; /*the padding is the space between the content and the border, this makes all 4 sides 20px, this is the same as padding: 20px 20px 20px 20px, which is the same as padding: 20px 20px, which is the same as padding: 20px*/
+    max-width: 500px; /*this is the maximum width of the div,on a very wide screen the coffee and dessert appear far apart from their prices. if the screen is smaller than 500px, the div will take up the entire width of the screen*/
   }
+
+ 
 
   .item p { 
     display:inline-block; /*with this property, the p element in any item class will be displayed as an inline-level block container, following eachother horizontally. The element itself is formatted as an inline element, but you can apply height and width values becasue they are block too*/
   }
   
-  .flavor {
-    text-align: left; 
+  .flavor, .dessert { /*here is how to add to class selectors on a style*/
+    text-align: left;
+    width: 75%;/*this could 50% as well as the price, but the flavour has more text so it needs more space in the event of a smaller screen*/
   }
   
   .price {
     text-align: right;
+    width: 25%;
   }
