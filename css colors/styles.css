@@ -1,0 +1,85 @@
+  h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto; /* first value works for top and bottom while other value works for left and right*/
+  }
+
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5); /* last value is for opacity, its value ranges from 0 to 1, its same as setting the opacity property*/
+    border-left: 10px double black; /* the border is on each side of element, and a side can be specified, this format sets width,style and color*/
+  }
+
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+
+  .cap, .sleeve {
+    display: inline-block; /* this makes the elements to be in the same line*/
+  }
+
+  .red {
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); /*this creates a bright in the middle kind of effect*/
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+  }
+
+  .linear{
+    margin-top: 100px;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 75%,rgb(0, 255, 0),rgb(0,0,255));
+    box-shadow: -5px -5px 10px 2px  rgb(5, 4, 4); 
+  }
+ /*One thing to remember is that the linear-gradient function actually creates an image element,
+  and is usually paired with the background property which can accept an image as a value.
+
+  90deg is the direction, 90 is like vertical and 180 is like horizontal,45deg is like diagonal
+  
+  
+  Color-stops allow you to fine-tune where colors are placed along the gradient line. They are a length unit
+  like px or percentages that follow a color in the linear-gradient function.
+  For example, in this red-green-blue gradient, the transition from red to green takes place at the 75% point along
+  the gradient line, so red takes up most of the available space:
+  */
+
+  /*box-shadow: offsetX offsetY blurRadius spreadRadius color;
+Here's how the offsetX and offsetY values work:
+
+both offsetX and offsetY accept number values in px and other CSS units
+a positive offsetX value moves the shadow right and a negative value moves it left
+a positive offsetY value moves the shadow down and a negative value moves it up
+if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.
+The height and width of the shadow is determined by the height and width of the element it's applied to. You can also use an optional spreadRadius
+value to spread out the reach of the shadow. More on that later.
+
+If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
+The box-shadow property lets you apply one or more shadows around an element.
+But what if you wanted to expand the shadow out further? You can do that with the optional spreadRadius value:
+*/
+ 
+
+/*It's better practice to choose one color as the dominant color like a background, 
+  and use its complementary color as an accent to bring attention to certain content on the page.*/
+
+  
