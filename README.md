@@ -35,7 +35,22 @@ makes the code easier to read , makes the site more accessible , leads to better
     - Use of button tag
     - Good Alternative Texts for images = `alt`
     - ETC
+* During development, it is useful to see the fieldset default borders. However, they make the content appear too separated. 
 
+By default, most HTML elements do not have borders. You usually need to add them manually using CSS, like so:
+
+```css
+* {
+  border: 1px solid red;
+}
+```
+To remove the borders, add the following code to the CSS file:
+
+```css
+fieldset {
+    border: none;
+}
+```
 
 * [BASIC_HTML](./basic.html) : This file contains a basic html file structure with some description comments.
     - Avoid long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
