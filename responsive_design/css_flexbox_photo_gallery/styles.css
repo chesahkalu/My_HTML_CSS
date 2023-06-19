@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;  
+}
+/*By default, elements use the content-box model, which means the width and height properties only apply to the content of the element, 
+and any padding or border is added to that size to determine the total size of the element.
+
+However, when you use box-sizing: border-box;, the padding and border are included in the element's total width and height. 
+This means if you have a div element with a width of 300px and padding of 10px, the content inside the div will only be 280px wide. 
+This makes layouts more intuitive and easier to control.
+
+The * is a wildcard selector in CSS, so when you declare * { box-sizing: border-box; }, you are applying this box-sizing behavior to every element on the page. 
+It's a popular technique to make CSS behave more predictably and consistently across different elements and browsers.*/
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;/*width of 100% and a max-width of 350px so they shrink as needed but don't get too big.*/
+    /*width of 100% is on first aproach to responsive, this makes the element the size of any screen it is displaying on. 
+    Giving a max-width make it not so big on a large screen if you dont want that.*/
+    height: 300px;
+}
+
+body{
+    margin: 0;
+    background-color: #f5f6f7;
+    font-family: sans-serif;
+  }
