@@ -17,10 +17,52 @@ It's a popular technique to make CSS behave more predictably and consistently ac
     /*width of 100% is on first aproach to responsive, this makes the element the size of any screen it is displaying on. 
     Giving a max-width make it not so big on a large screen if you dont want that.*/
     height: 300px;
+    object-fit: cover;
 }
+
+/*ImGE DISTORTION WILL OCCUR because the images have different aspect ratios. Rather than setting each aspect ratio individually, 
+you can use the object-fit property to determine how images should behave.
+ object-fit: cover; This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.*/
 
 body{
     margin: 0;
     background-color: #f5f6f7;
     font-family: sans-serif;
   }
+
+  .header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+    
+  }
+
+  .gallery {
+    display: flex; /*Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container.This will make the element a flex container. Any direct children of a flex container are called flex items.*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid;
+
+}
+  /*Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
+row (default): horizontal axis with flex items from left to right
+row-reverse: horizontal axis with flex items from right to left
+column: vertical axis with flex items from top to bottom
+column-reverse: vertical axis with flex items from bottom to top
+Note: The axes and directions will be different depending on the text direction. The values shown are for a left-to-right text direction.*/
+
+/*The flex-wrap property determines how your flex items behave when the flex container is too small. 
+Setting it to wrap will allow the items to wrap to the next row or column. nowrap (default) will prevent 
+your items from wrapping and shrink them if needed.*/
+
+/*The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.*/
+
+/*The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.*/
