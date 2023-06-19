@@ -50,6 +50,8 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     border: 1px solid;
+    gap: 16px;
+    border-radius: 10px;
 
 }
   /*Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
@@ -66,3 +68,16 @@ your items from wrapping and shrink them if needed.*/
 /*The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.*/
 
 /*The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.*/
+
+/*The gap CSS shorthand property sets the gaps, also knowns as gutters, between rows and columns. The gap property and its row-gap and 
+column-gap sub-properties provide this functionality for flex, grid, and multi-column layout*/
+
+.gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+  /*The ::after pseudo-element creates an element that is the last child of the selected element. 
+  You can use it to add an empty element after the last image. If you give it the same width as the images it 
+  will push the last image to the left when the gallery is in a two-column layout. Right now, 
+  it is in the center because you set justify-content: center on the flex container.*/
