@@ -4,7 +4,7 @@ h1, h2, p {
 
   img{
     display: block; /*set the display property of the element to block, images are inline by default,  to be able to set the margin property, we need to set the display property to block*/
-    margin: 0 auto; /*set the margin for the top and bottom of the element*/
+    margin: 20px auto; /*set the margin for the top and bottom of the element*/
     margin-top: -25px; /*set the margin for the top of the element, this is a negative value, so the image will move up*/
   }
 
@@ -60,7 +60,7 @@ h1, h2, p {
   
   .flavor, .dessert { /*here is how to add to class selectors on a style*/
     text-align: left;
-    width: 75%;/*this could 50% as well as the price, but the flavour has more text so it needs more space in the event of a smaller screen*/
+    width: 75%;/*this could be 50% as well as the price, but the flavour has more text so it needs more space in the event of a smaller screen*/
   }
   
   .price {

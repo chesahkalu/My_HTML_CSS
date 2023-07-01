@@ -20,7 +20,7 @@ It's a popular technique to make CSS behave more predictably and consistently ac
     object-fit: cover;
 }
 
-/*ImGE DISTORTION WILL OCCUR because the images have different aspect ratios. Rather than setting each aspect ratio individually, 
+/*Image DISTORTION WILL OCCUR because the images have different aspect ratios. Rather than setting each aspect ratio individually, 
 you can use the object-fit property to determine how images should behave.
  object-fit: cover; This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.*/
 
