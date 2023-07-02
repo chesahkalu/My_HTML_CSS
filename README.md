@@ -100,7 +100,7 @@ fieldset {
 }
 ```
 
-* box-sizinig
+* box-sizing: border-box:  is used to change exactly how the box model works and how an element’s size is calculated. The border-box value alters the box model so that any border or padding property values are included within the width and height of an element. When using the border-box value, if an element has a width of 400 pixels, a padding of 20 pixels around every side, and a border of 10 pixels around every side, the actual width will remain 400 pixels.
 
 
 
