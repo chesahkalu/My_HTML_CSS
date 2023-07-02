@@ -35,57 +35,6 @@ makes the code easier to read , makes the site more accessible , leads to better
     - Use of button tag
     - Good Alternative Texts for images = `alt`
     - ETC
-* During development, it is useful to see the fieldset default borders. However, they make the content appear too separated. 
-
-By default, most HTML elements do not have borders. You usually need to add them manually using CSS, like so:
-
-```css
-* {
-  border: 1px solid red;
-}
-```
-To remove the borders, add the following code to the CSS file:
-
-```css
-fieldset {
-    border: none;
-}
-```
-
-* [BASIC_HTML](./basic.html) : This file contains a basic html file structure with some description comments.
-    - Avoid long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
-    - Use proper indentations, white spaces and blank lines , for readability.
-    - Never skip the `<title>` element in your HTML document
-    - Never skip the `<html>` , `<body>` , and `<head>` tags. This is the first step to semantic codes
-    - The lang attribute is vital to include within an `<html>` element. Its primary goal is to define the natural language of the content. 
-    Browsers and search engines use this information for a more accurate page ranking in search results. If there's a piece of text in a different language, 
-    you can specify the language with the lang attribute for the element that surrounds the content.
-    - Give everything the appropriate hierarchy.
-    - Titles should not be longer than 50 characters as search engines ignore text after 50 characters and generally, most screens cannot display titles longer than 50 characters.
-    - Try to be as unique as possible, duplicate titles don't do well in SEO rankings and may cause confusion for users.
-    - Some elements are self closing eg. `<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>`
-    - Observe and use `block` and `in-line` elements properly
-        * Block-level elements begin on a new line, stacking one on top of the other, and occupy any available width. 
-        Block-level elements may be nested inside one another and may wrap inline-level elements eg- `<header> , <p>` , etc
-        * Inline-level elements must not begin on a new line. They fall into the normal flow of a document, 
-        lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; 
-        however, they cannot wrap block-level elements. eg, `<span> <a> <pre>` etc
-    - always set the height or width of images. Otherwise when the image loads, the content on the webpage will be shifted.
-    - `<strong>` and `<em>` are semantic tagss used to put emphasis, even though they both bold and italics the texts withing them respectively.
-    `<b>` and `<i>` can be used respectively in place of them.
-    - some text formating tags 
-        * `<b>` tag - Bold Text
-        * `<i>` tag - Italic Text
-        * `<u>` tag - Underlined Text
-        * `<strong>` tag - Strong Text
-        * `<em>` tag - Emphasized Text
-        * `<mark>` tag - Highlighted Text
-        * `<sup>` tag - Superscript Text
-        * `<sub>` tag - Subscript Text
-        * `<del>` tag - Deleted Text
-        * `<ins>` tag - Inserted Text
-        * `<big>` tag - Big Text
-        * `<small>` tag - Small Text
 
 ## CSS pointers:
 * SYLING IN HTML : with a `<style>` tag and element in your HTML code, you can specify some of the design presentation of your HTML document. This is generally
@@ -134,7 +83,24 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
 
     When building a website, it is always best to write modular styles that may be reused elsewhere, and reusable layouts are high on the list of reusable code. Layouts can be created using either floats or inline-block elements.
 
+* During development, it is useful to see the fieldset default borders. However, they make the content appear too separated. 
 
+By default, most HTML elements do not have borders. You usually need to add them manually using CSS, like so:
+
+```css
+* {
+  border: 1px solid red;
+}
+```
+To remove the borders, add the following code to the CSS file:
+
+```css
+fieldset {
+    border: none;
+}
+```
+
+* box-sizinig
 
 
 
@@ -167,3 +133,39 @@ identifying a particular element with a tag, and using the tag(Class, Id) to sel
 
 
 
+
+
+* [BASIC_HTML](./basic.html) : This file contains a basic html file structure with some description comments.
+    - Avoid long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
+    - Use proper indentations, white spaces and blank lines , for readability.
+    - Never skip the `<title>` element in your HTML document
+    - Never skip the `<html>` , `<body>` , and `<head>` tags. This is the first step to semantic codes
+    - The lang attribute is vital to include within an `<html>` element. Its primary goal is to define the natural language of the content. 
+    Browsers and search engines use this information for a more accurate page ranking in search results. If there's a piece of text in a different language, 
+    you can specify the language with the lang attribute for the element that surrounds the content.
+    - Give everything the appropriate hierarchy.
+    - Titles should not be longer than 50 characters as search engines ignore text after 50 characters and generally, most screens cannot display titles longer than 50 characters.
+    - Try to be as unique as possible, duplicate titles don't do well in SEO rankings and may cause confusion for users.
+    - Some elements are self closing eg. `<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>`
+    - Observe and use `block` and `in-line` elements properly
+        * Block-level elements begin on a new line, stacking one on top of the other, and occupy any available width. 
+        Block-level elements may be nested inside one another and may wrap inline-level elements eg- `<header> , <p>` , etc
+        * Inline-level elements must not begin on a new line. They fall into the normal flow of a document, 
+        lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; 
+        however, they cannot wrap block-level elements. eg, `<span> <a> <pre>` etc
+    - always set the height or width of images. Otherwise when the image loads, the content on the webpage will be shifted.
+    - `<strong>` and `<em>` are semantic tagss used to put emphasis, even though they both bold and italics the texts withing them respectively.
+    `<b>` and `<i>` can be used respectively in place of them.
+    - some text formating tags 
+        * `<b>` tag - Bold Text
+        * `<i>` tag - Italic Text
+        * `<u>` tag - Underlined Text
+        * `<strong>` tag - Strong Text
+        * `<em>` tag - Emphasized Text
+        * `<mark>` tag - Highlighted Text
+        * `<sup>` tag - Superscript Text
+        * `<sub>` tag - Subscript Text
+        * `<del>` tag - Deleted Text
+        * `<ins>` tag - Inserted Text
+        * `<big>` tag - Big Text
+        * `<small>` tag - Small Text
