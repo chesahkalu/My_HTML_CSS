@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif; /* font family with spaces in the name needs quotes */
+  }
+  
+  .label {
+    border: 2px solid black; /*Borders can be used to group and prioritize content.*/
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+  }
