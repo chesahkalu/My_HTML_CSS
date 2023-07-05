@@ -90,7 +90,14 @@
   .double-indent {
     margin-left: 2em;
   }
-  
+
   .daily-value p:not(.no-divider) { /*The :not() CSS pseudo-class represents elements that do not match a list of selectors. */
     border-bottom: 1px solid #888989;
+  }
+
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
   }
