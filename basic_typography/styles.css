@@ -87,6 +87,10 @@
     margin-left: 1em;
   }
 
+  .double-indent {
+    margin-left: 2em;
+  }
+  
   .daily-value p:not(.no-divider) { /*The :not() CSS pseudo-class represents elements that do not match a list of selectors. */
     border-bottom: 1px solid #888989;
   }
