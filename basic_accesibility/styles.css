@@ -1,0 +1,28 @@
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+  }
+  
+  #logo{
+    width: max(100px, 18vw); /*will have a minimum width of 100px. And as the viewport grows, the image will grow accordingly to be 18 percent of the viewport width.*/
+    aspect-ratio: 35 / 4; /*The aspect-ratio CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.*/
+    padding: 0.4rem;
+    background-color: #0a0a23;
+  }
+
+
+    nav > ul { /*child combinator selector. It selects elements that are direct children of a specified parent element.
+    In the case of nav > ul, it selects <ul> elements that are direct children of <nav> elements.*/
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+    }
+
+
+
+
+
+
+  
