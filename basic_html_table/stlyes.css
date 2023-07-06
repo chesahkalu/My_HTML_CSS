@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+
+span[class~="sr-only"] { /*You can use CSS to make elements with this class completely hidden from the visual page, but still be announced by screen readers.*/
+    border: 0 !important; /* The !important rule is used to override the default CSS rules applied by the browser.*/
+    clip: rect(1px, 1px, 1px, 1px) !important; /*The "clip" property and the "rect(1px, 1px, 1px, 1px)" value clip the element to an invisible 1x1 pixel rectangle, effectively hiding it from view.*/
+    clip-path: inset(50%) !important; /*The "clip-path" property and the "inset(50%)" value clip the element to an invisible 1x1 pixel rectangle, effectively hiding it from view.*/
+    height: 1px;
+    width: 1px;
+    overflow: hidden !important; /*The "overflow" property and the "hidden" value hide the content of the element from view.*/
+    white-space: nowrap !important; /*The "white-space" property and the "nowrap" value prevent the browser from wrapping the content onto a new line.*/
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important; /*The "margin" property and the "-1px" value hide the element by moving it 1 pixel up and to the left, out of the viewport.*/
+}
+
+/* The following CSS rule targets the first span element that is a direct child of an h1 element with a class of "flex".
+The purpose of this rule is to set a font size of 0.7em to reduce the size of the text within this specific span element. */
+
+h1 .flex span:first-of-type {
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+  }
+  
+  #years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background: #0a0a23;
+    color: #fff;
+    z-index: 999; /*The "z-index" property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.*/
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0; /*The "calc()" function performs a calculation to determine the value of a CSS property. In this case, the "calc()" function is used to calculate the value of the "padding-right" property.*/
+    margin: 0 -2px;
+  }
+
+  #years span[class] { /*The "span[class]" selector targets all span elements that have a class attribute.*/
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+span {
+    font-weight: normal;
+  }
+  
+
+table {
+    border-collapse: collapse; /*The "border-collapse" property sets whether table borders should collapse into a single border or be separated as in standard HTML.*/
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+  }
+
+  table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+  }
+  
+  tbody td {
+    width: 100vw;
+    min-width: 4rem;
+    max-width: 4rem;
+  }
+  
+  tbody th {
+    width: calc(100% - 12rem);
+  }
+
+  tr[class="total"] { /*The "tr[class="total"]" selector targets all tr elements that have a class attribute with a value of "total".*/
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+/*The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the only class is total.
+The second will select tr elements where the class includes total.8*/
+
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+tr.total td:nth-of-type(3){
+    padding: 0.5rem;
+}
+
+td.current {
+    font-style: italic;
+}
+
+tr.data {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data th .description {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+    padding-right: 0.5rem;
+}
