@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) { /*This approach allows you to provide smooth scrolling behavior for users who do not have a preference for reduced motion, while respecting the preferences of users who have specifically set reduced motion preferences in their devices or browsers.*/
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
 body {
     background: #f5f6f7;
     color: #1b1b32;
@@ -35,8 +41,7 @@ body {
     height: 50px;
   }
 
-  nav > ul { /*child combinator selector. It selects elements that are direct children of a specified parent element.
-    In the case of nav > ul, it selects <ul> elements that are direct children of <nav> elements.*/
+  nav > ul { /*child combinator selector. It selects elements that are direct children of a specified parent element.In the case of nav > ul, it selects <ul> elements that are direct children of <nav> elements.*/
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -113,6 +118,14 @@ body {
     text-align: right;
   }
 
+  .question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+  }  
+
   p {
     margin-top: 5px;
     padding-left: 15px;
@@ -128,7 +141,6 @@ body {
     padding-bottom: 0;
   }
   
-
   .answers-list{
     padding: 0;
     list-style: none;
@@ -171,4 +183,3 @@ body {
     white-space: nowrap;
     border: 0;
 }
-  
