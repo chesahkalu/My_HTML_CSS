@@ -46,6 +46,10 @@ body {
     border-bottom: 4px solid #dfdfe2;
   }
 
+  p::before { /*the ::before pseudo-element to add content before the content of each <p> element. This wont be viisble in the HTML, but will creat whatever the content is before the <p> element.*/
+    content: "Question #";
+  }
+
   .sr-only{ /*this is a common pattern to visually hide text for only screen readers to read.*/
     position: absolute;
     width: 1px;
