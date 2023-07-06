@@ -4,6 +4,13 @@ body {
     font-family: Helvetica;
     margin: 0;
   }
+
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+  }
   
   #logo{
     width: max(100px, 18vw); /*will have a minimum width of 100px. And as the viewport grows, the image will grow accordingly to be 18 percent of the viewport width.*/
@@ -12,17 +19,30 @@ body {
     background-color: #0a0a23;
   }
 
+  h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+  }
+  
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
 
-    nav > ul { /*child combinator selector. It selects elements that are direct children of a specified parent element.
+
+  nav > ul { /*child combinator selector. It selects elements that are direct children of a specified parent element.
     In the case of nav > ul, it selects <ul> elements that are direct children of <nav> elements.*/
       display: flex;
       justify-content: space-evenly;
-      list-style: none;
-    }
+  }
 
-
-
-
-
-
+  h1,
+  h2 {
+    font-family: Verdana, Tahoma;
+  }
+  
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+  }
   
