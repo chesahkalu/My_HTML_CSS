@@ -82,6 +82,42 @@ body {
   
   h2 {
     border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+
+  .info {
+    padding: 10px 0 0 5px;
+  }
+  
+  .formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+  }
+  
+  input {
+    font-size: 16px;
+  }
+
+  .info label, .info input {
+    display: inline-block;
+  }
+  
+  .info input {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .info label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+  }
+
+  p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
   }
 
   p::before { /*the ::before pseudo-element to add content before the content of each <p> element. This wont be viisble in the HTML, but will creat whatever the content is before the <p> element.*/
