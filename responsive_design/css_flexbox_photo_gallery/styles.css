@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*This smooths out the scroll animation.*/ 
 }
 /*By default, elements use the content-box model, which means the width and height properties only apply to the content of the element, 
 and any padding or border is added to that size to determine the total size of the element.
