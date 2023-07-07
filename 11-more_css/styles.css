@@ -11,3 +11,12 @@ body {
     left: 0;
     z-index: -1; /*The "z-index" property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.*/
 }
+
+#offwhite-character {
+    width: 300px;
+    height: 550px;
+    background-color: GhostWhite;
+    position: absolute;
+    top: 20%;
+    left: 17.5%;
+  }
