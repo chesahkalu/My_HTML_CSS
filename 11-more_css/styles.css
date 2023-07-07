@@ -188,3 +188,29 @@ body {
     border-right-color: gold;
     display: inline-block;
 }
+
+#guitar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    z-index: 3;
+}
+
+.guitar {
+    width: 150px;
+    height: 120px;
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+
+#guitar-left {
+    position: absolute;
+    left: 0px;
+}
+
+#guitar-right {
+    position: absolute;
+    left: 100px;
+}
