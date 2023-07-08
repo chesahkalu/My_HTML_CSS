@@ -19,6 +19,7 @@ These pseudo-elements are often used to create cosmetic content, which you will 
     height: 290px;
     margin: 80px auto;
     padding: 90px 20px 0 20px;
+    position: relative; /*The "position" property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). with "relative" the element is positioned relative to its normal position. This makes it possible to position an element relative to the edges of its containing block or another element. */
   }
 
   .keys {
@@ -26,12 +27,52 @@ These pseudo-elements are often used to create cosmetic content, which you will 
     width: 949px;
     height: 180px;
     padding-left: 2px;
+    overflow: hidden; /*The "overflow" property specifies what happens if content overflows an element's box. This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area. */
   }
 
   .key {
     background-color: #ffffff;
-    position: relative;
+    position: relative; /* relative positioning allows you to position an element relative to its normal position, unlike absolute positioning, which positions an element relative to its parent's position and can overlap other elements. */
     width: 41px;
     height: 175px;
+    float: left; /*The float property specifies whether or not an element should float. The float property can have one of the following values: left - The element floats to the left of its container, right - The element floats to the right of its container, none - The element does not float (will be displayed just where it occurs in the text).*/
   }
-  
+
+  .key.black--key::after { /*The ::after selector inserts something after the content of each selected element(s).*/
+    background-color: #1d1e22;
+    content: ""; /*this makes the pseudo-element empty, but you can also use the content property to insert text content onto the page. It ensures that the pseudo-element is displayed, even if it's empty.*/
+    position: absolute;
+    left: -18px; /*this moves the pseudo-element 18px to the left of the element it is attached to.*/
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+}
+
+/*The @media rule is used to apply different CSS styles based on the characteristics of the device or viewport.
+For example, you can use media queries to apply styles based on the screen size, orientation, or resolution.
+Media queries can be used to create responsive designs that adapt to different devices and screen sizes.
+
+In the below code, it is used to define responsive styles for different screen sizes or devices.
+The media query specified in this code, (max-width: 600px), targets devices with a maximum width of 600 pixels.
+When the viewport width is equal to or less than 600 pixels, the styles within this media query block will be applied.
+This allows for the adaptation of the layout and design to smaller screens, such as mobile devices.
+
+For example, let's say we have a navigation menu that needs to be displayed differently on mobile screens.
+Within the @media block, we can specify new styles for the navigation menu that make it more suitable for smaller screens.
+
+These styles will override the default styles specified outside of the media query block, allowing us to create a mobile-friendly design.
+By using media queries, we can create responsive designs that adapt to different devices and screen sizes, improving the user experience.
+It allows us to optimize the layout, typography, and other design elements to provide the best presentation and usability on various devices.
+*/
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+  .keys {
+      width: 318px;
+  }
+  .logo {
+      width: 150px;
+  }
+}

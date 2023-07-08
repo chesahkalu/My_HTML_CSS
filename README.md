@@ -130,6 +130,13 @@ fieldset {
     
     `flex-wrap: wrap:` This sets the flex-wrap property to wrap, which allows the flex items to wrap onto multiple lines if they don't fit within the container. This can be useful for creating responsive layouts where the number of items in a row needs to adjust based on the available width.
     
+* The terms "absolute" and "relative" refer to positioning in CSS. Here's a brief explanation of each:
+
+    - Absolute positioning: When an element is positioned absolutely, it is removed from the normal flow of the document and positioned relative to its nearest positioned ancestor. If no positioned ancestor exists, the element is positioned relative to the initial containing block, which is typically the viewport. Absolute positioning allows you to specify the exact coordinates (top, right, bottom, left) of the element, using properties like top, right, bottom, and left. Elements with absolute positioning are not affected by other elements and can overlap with them.
+
+    - Relative positioning: When an element is positioned relatively, it is still within the normal flow of the document, but its position can be adjusted relative to its normal position. The element will occupy space in the document flow as if it were in its normal position, and then you can use properties like top, right, bottom, and left to move it from that position. Relative positioning allows you to create offsets from the element's normal position, but it still maintains its position in the document flow and respects the space occupied by other elements.
+
+- In summary, absolute positioning takes the element out of the normal flow and positions it relative to a specified ancestor or the viewport, while relative positioning adjusts the position of an element relative to its normal position within the document flow.
 
 
 
