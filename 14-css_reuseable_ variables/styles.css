@@ -294,4 +294,26 @@
         var(--window-color3) 30%
       );
   }
-      
+
+  /* darker edition query */
+@media (max-width: 1000px) {
+    :root {
+        --building-color1: #000; 
+        --building-color2: #000;
+        --building-color3: #000;
+        --building-color4: #000;
+        --window-color1: #777;
+        --window-color2: #777;
+        --window-color3: #777;
+        --window-color4: #777;
+    } 
+    .sky {
+        background: radial-gradient(
+            circle closest-corner at 15% 15%,
+            #ccc 0%,
+            #ccc 20%,
+            #445 21%,
+            #223 100%
+        );
+    }
+}
