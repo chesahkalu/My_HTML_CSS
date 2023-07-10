@@ -1,0 +1,47 @@
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  
+  .line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%; /* The transform-origin property is used to set the point around which a CSS transformation is applied. The transform-origin determines around which point the element is rotated. 0% 0%. This will offset the origin point by 0% from the left and 0% from the top, setting it to the top left corner of the element.*/
+  }
+
+  .line:nth-of-type(2){ /* The :nth-of-type() CSS pseudo-class matches elements of a given type, based on their position among a group of siblings. */
+    transform: rotate(60deg); /* transform property allows you to manipulate the shape of an element. In this case, using the rotate(60deg) value will rotate the element around its transform-origin point by 60 degrees clockwise.*/
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+  
+  .cabin {
+   background-color: red;
+      width: 20%;
+      height: 20%;
+      position: absolute;
+      border: 2px solid;
+      transform-origin: 50% 0%; /* The transform-origin property is used to set the point around which a CSS transformation is applied. The transform-origin determines around which point the element is rotated. 50% 0%. This will offset the origin point by 50% from the left and 0% from the top, setting it to the top center of the element.*/
+      animation: cabins 10s ease-in-out infinite; /* The animation property in CSS can be used to animate many other CSS properties such as color, background-color, height, or width. Each animation needs to be defined with the @keyframes at-rule which is then called with the animation property, like so: animation: 5s ease-in-out 3s 2 reverse both paused slidein; */
+  }
