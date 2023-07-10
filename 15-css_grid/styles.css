@@ -1,0 +1,52 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+      font-size: 62.5%; /*This will set the default font size for your web page to 10px (the browser default is 16px), 2rem*/
+      box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Baskervville', serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+  }
+  
+  h1 {
+    font-family: 'Anton', sans-serif;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: linen;
+  }
+
+  main { 
+    display: grid; /*CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.*/
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr); /*The minmax function takes two arguments, the first being the minimum value and the second being the maximum. These values could be a length, percentage, fr, or even a keyword like max-content.*/
+    row-gap: 3rem; /*To add space between rows in the grid layout, you can use the row-gap property. Give the main selector a row-gap property of 3rem.*/
+  }
+
+  .heading {
+    grid-column: 2 / 3; /* This will tell the .heading element to start at grid line 2 and end at grid line 3.*/
+    display: grid; /*For additional control over the layout of your content, you can have a CSS Grid within a CSS Grid.*/
+    grid-template-columns: repeat(2, 1fr);/*The CSS repeat() function is used to repeat a value, rather than writing it out manually, and is helpful for grid layouts. For example, setting the grid-template-columns property to repeat(20, 200px) would create 20 columns each 200px wide.  -repeat(2, 1fr) to create two columns of equal width.*/
+    row-gap: 1.5rem;
+   }
+
+   .hero {
+    grid-column: 1 / -1; /*Remember that the grid-column property determines which columns an element starts and ends at. There may be times where you are unsure of how many columns your grid will have, but you want an element to stop at the last column. To do this, you can use -1 for the end column.This will tell the element to span the full width of the grid.*/
+    position: relative;
+}
+
+
+
+  
+  
