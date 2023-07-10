@@ -45,3 +45,32 @@
       transform-origin: 50% 0%; /* The transform-origin property is used to set the point around which a CSS transformation is applied. The transform-origin determines around which point the element is rotated. 50% 0%. This will offset the origin point by 50% from the left and 0% from the top, setting it to the top center of the element.*/
       animation: cabins 10s ease-in-out infinite; /* The animation property in CSS can be used to animate many other CSS properties such as color, background-color, height, or width. Each animation needs to be defined with the @keyframes at-rule which is then called with the animation property, like so: animation: 5s ease-in-out 3s 2 reverse both paused slidein; */
   }
+
+  /*The @keyframes at-rule is used to define the flow of a CSS animation. Within the @keyframes rule, you can create selectors for specific points in the animation sequence, such as 0% or 25%, or use from and to to define the start and end of the sequence.
+
+@keyframes rules require a name to be assigned to them, which you use in other rules to reference. For example, the @keyframes freeCodecamp { } rule would be named freeCodeCamp.*/
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+  }
+  .cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+  }
