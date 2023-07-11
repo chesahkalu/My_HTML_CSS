@@ -142,7 +142,7 @@ fieldset {
 
 # Files and Folders : 
 
-* [BASIC_HTML](./1-basic.html) : This file contains a basic html file structure with some description comments.
+* [1-basic_html](./1-basic.html) : This file contains a basic html file structure with some description comments.
     - Avoid long lines of codes. If long text should be in one line on web page, break them into multiple lines in the HTML code
     - Use proper indentations, white spaces and blank lines , for readability.
     - Never skip the `<title>` element in your HTML document
@@ -176,4 +176,8 @@ fieldset {
         * `<ins>` tag - Inserted Text
         * `<big>` tag - Big Text
         * `<small>` tag - Small Text
+
+* [2-basic_css](./2-basic_css) : This file contains basic introduction into the use of css codes to style a basic coffee shop menu. The css file contains various lines of comments for description.
+
+
 
