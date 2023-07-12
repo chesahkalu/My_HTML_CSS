@@ -179,5 +179,9 @@ fieldset {
 
 * [2-basic_css](./2-basic_css) : This file contains basic introduction into the use of css codes to style a basic coffee shop menu. The css file contains various lines of comments for description.
 
+* [3-basic_css_colors](./3-basic_css_colors) :  This files contains basic css and html files showing different ways to set color values and how to pair colors with each other.
+
+
+
 
 
